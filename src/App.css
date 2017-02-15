@@ -1,0 +1,76 @@
+.App {
+}
+
+.App-header {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  text-align: center;
+}
+
+.nomargin {
+  margin: 0;
+}
+
+.nopadding {
+  padding: 0;
+}
+
+.padding20 {
+  padding: 20px;
+}
+
+.margin20 {
+  margin: 20px;
+}
+
+.paddingbottom20 {
+  padding-bottom: 20px;
+}
+
+.tapahtuma {
+  flex-grow: 1;
+  padding: 0 200px 0 0;
+}
+
+.tapahtumaaika {
+  min-width: 200px;
+  text-align: left;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.digit {
+  border-radius: 10px;
+  padding: 3px 7px 3px 7px;
+}
+
+.asteriski {
+  border-radius: 10px;
+  padding: 3px 7px 3px 7px;
+}
+
+.nucleus {
+  border-radius: 10px;
+  padding: 3px 7px 3px 7px;
+}
+
+.flex {
+  display: flex;
+}
+
+a {
+  color: white;
+  font-size: 1.5em;
+}
+
+a:hover {
+  color: grey;
+}
+
+.logo {
+  align-self: center;
+}
