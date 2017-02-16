@@ -3,6 +3,48 @@ import logo from './larjestotlogo.png';
 import './App.css';
 
 class App extends Component {
+  constructor(props){
+    super(props);
+    var wappuyear = 2017;
+    var wappumonth = 4;
+    var wappuday = 1;
+    var wappudate = new Date(wappuyear,wappumonth,wappuday);
+    console.log(wappudate.toString());  
+    var timetowappu = new Date(Date.parse(wappudate)-Date.parse(Date()));
+    this.state = {vappuun: timetowappu, tunnit: 0, minuutit: 0, sekuntit: 0};
+  }
+  
+  tick() {
+    this.setState((prevState) => ({
+      vappuun: new Date(Date.parse(prevState.vappuun) - 1),
+      tunnit: Math.floor(Date.parse(this.state.vappuun)/1000/60/60)
+    }));
+    if(this.state.vappuun.getMinutes() < 10){
+      this.setState({minuutit: 0+''+this.state.vappuun.getMinutes()})
+    }
+    else {
+      this.setState({minuutit: this.state.vappuun.getMinutes()})
+    }
+    if(this.state.vappuun.getSeconds() < 10){
+      this.setState({sekuntit: 0+''+this.state.vappuun.getSeconds()})
+    }
+    else {
+      this.setState({sekuntit: this.state.vappuun.getSeconds()})
+    }
+  }
+
+  componentDidMount() {
+    this.interval = setInterval(() => this.tick(), 1000);
+    this.setState({
+      tunnit: Math.floor(Date.parse(this.state.vappuun)/1000/60/60),
+      minuutit: this.state.vappuun.getMinutes(),
+      sekuntit: this.state.vappuun.getSeconds()
+    })
+  }
+
+  componentWillUnmount() {
+    clearInterval(this.interval);
+  }
   render() {
     return (
       <div className="App">
@@ -15,7 +57,9 @@ class App extends Component {
               <h4>Turun Teekkariwappu</h4>
             </div>
             <div className="col l4 m12">
-              <h5>14:12:25</h5>
+              <h5>
+                {this.state.tunnit}:{this.state.minuutit}:{this.state.sekuntit}
+              </h5>
             </div>
             <div className="col l4 m12">
               <a className="digit" href="http://digit.fi/">Digit</a> <a className="nucleus" href="http://nucleus.fi/">Nucleus</a> <a className="asteriski" href="https://www.asteriski.fi/">Asteriski</a>
