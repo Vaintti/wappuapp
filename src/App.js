@@ -3,40 +3,40 @@ import logo from './larjestotlogo.png';
 import './App.css';
 
 class App extends Component {
-  constructor(props){
+  constructor(props) {
     super(props);
     var wappuyear = 2017;
     var wappumonth = 4;
     var wappuday = 1;
-    var wappudate = new Date(wappuyear,wappumonth,wappuday);
-    console.log(wappudate.toString());  
-    var timetowappu = new Date(Date.parse(wappudate)-Date.parse(Date()));
-    this.state = {vappuun: timetowappu, tunnit: 0, minuutit: 0, sekuntit: 0};
+    var wappudate = new Date(wappuyear, wappumonth, wappuday);
+    console.log(wappudate.toString());
+    var timetowappu = new Date(Date.parse(wappudate) - Date.parse(Date()));
+    this.state = { vappuun: timetowappu, tunnit: 0, minuutit: 0, sekuntit: 0 };
   }
-  
+
   tick() {
     this.setState((prevState) => ({
       vappuun: new Date(Date.parse(prevState.vappuun) - 1),
-      tunnit: Math.floor(Date.parse(this.state.vappuun)/1000/60/60)
+      tunnit: Math.floor(Date.parse(this.state.vappuun) / 1000 / 60 / 60)
     }));
-    if(this.state.vappuun.getMinutes() < 10){
-      this.setState({minuutit: 0+''+this.state.vappuun.getMinutes()})
+    if (this.state.vappuun.getMinutes() < 10) {
+      this.setState({ minuutit: 0 + '' + this.state.vappuun.getMinutes() })
     }
     else {
-      this.setState({minuutit: this.state.vappuun.getMinutes()})
+      this.setState({ minuutit: this.state.vappuun.getMinutes() })
     }
-    if(this.state.vappuun.getSeconds() < 10){
-      this.setState({sekuntit: 0+''+this.state.vappuun.getSeconds()})
+    if (this.state.vappuun.getSeconds() < 10) {
+      this.setState({ sekuntit: 0 + '' + this.state.vappuun.getSeconds() })
     }
     else {
-      this.setState({sekuntit: this.state.vappuun.getSeconds()})
+      this.setState({ sekuntit: this.state.vappuun.getSeconds() })
     }
   }
 
   componentDidMount() {
     this.interval = setInterval(() => this.tick(), 1000);
     this.setState({
-      tunnit: Math.floor(Date.parse(this.state.vappuun)/1000/60/60),
+      tunnit: Math.floor(Date.parse(this.state.vappuun) / 1000 / 60 / 60),
       minuutit: this.state.vappuun.getMinutes(),
       sekuntit: this.state.vappuun.getSeconds()
     })
@@ -50,76 +50,88 @@ class App extends Component {
       <div className="App">
         <div className="row nomargin">
           <div className="App-header card nomargin black lighten-1 white-text">
-            <div className="col l1 m1 logo">
+            <div className="col s1 l1 m1 logo">
               <img src={logo} alt="logo" height="50px"></img>
             </div>
-            <div className="col l3 m11">
+            <div className="col s11 l3 m11">
               <h4>Turun Teekkariwappu</h4>
             </div>
-            <div className="col l4 m12">
+            <div className="col s12 l4 m12">
               <h5>
                 {this.state.tunnit}:{this.state.minuutit}:{this.state.sekuntit}
               </h5>
             </div>
-            <div className="col l4 m12">
+            <div className="col s12 l4 m12">
               <a className="digit" href="http://digit.fi/">Digit</a> <a className="nucleus" href="http://nucleus.fi/">Nucleus</a> <a className="asteriski" href="https://www.asteriski.fi/">Asteriski</a>
             </div>
           </div>
         </div>
         <div className="row">
-          <div className="padding20 col m12 l8">
-            <div className="grey lighten-5 card">
-              <div className="padding20 card black lighten-2 white-text">
+          <div className="padding20 col s12 m12 l8">
+            <div className="grey lighten-5 card flex-column">
+              <div className="padding20 card black lighten-2 white-text nomargin">
                 <h5>Viikon tapahtumat</h5>
               </div>
 
-              <ul className="collapsible popout paddingbottom20" data-collapsible="accordion">
+              <ul className="collapsible popout margin20topbottom" data-collapsible="accordion">
                 <li>
-                  <div className="collapsible-header flex"><span className="tapahtumaaika">Maanantaina klo. 15:00</span><span className="tapahtuma">Grilli ja kyykkä</span></div>
+                  <div className="collapsible-header flex"><span className="tapahtumaaika">Keskiviikkona 12.4. klo. 22:00</span><span className="tapahtuma">Wapunaloitusbileet</span></div>
                   <div className="collapsible-body row">
-                    <span className="col l6 m12">Syödään makkaraa, juodaan olutta ja heitetään karttua.</span>
-
-                    <iframe className="col l6 m12" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1967.2045731375958!2d22.281901316492235!3d60.45834598206804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNjDCsDI3JzMwLjEiTiAyMsKwMTcnMDIuNyJF!5e0!3m2!1sfi!2sfi!4v1487177864063" height="450" frameborder="0"></iframe>
+                    <span className="col s12 l6 m12">Juhlitaan wapun alkamista Night Club Vegasin tanssilattialla ja sen ympäristössä.</span>
+                    <iframe className="col s12 l6 m12" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1967.7490721141119!2d22.260436616410438!3d60.44935788206473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x468c76feb6c9a773%3A0xa9a4e10fd4201e45!2sCasino+Night+Club+Vegas!5e0!3m2!1sfi!2sfi!4v1487333708672" height="300px" frameborder="0"></iframe>
                   </div>
                 </li>
+
                 <li>
-                  <div className="collapsible-header"><i className="material-icons">place</i>Second</div>
-                  <div className="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                  <div className="collapsible-header flex"><span className="tapahtumaaika">Maanantaina 27.4.</span><span className="tapahtuma">Grilli ja kyykkä</span></div>
+                  <div className="collapsible-body row">
+                    <span className="col s12 l6 m12">Syödään makkaraa, juodaan olutta ja heitetään karttua.</span>
+
+                    <iframe className="col s12 l6 m12" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1967.2045731375958!2d22.281901316492235!3d60.45834598206804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNjDCsDI3JzMwLjEiTiAyMsKwMTcnMDIuNyJF!5e0!3m2!1sfi!2sfi!4v1487177864063" height="300" frameborder="0"></iframe>
+                  </div>
                 </li>
+
                 <li>
-                  <div className="collapsible-header"><i className="material-icons">whatshot</i>Third</div>
-                  <div className="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+                  <div className="collapsible-header flex"><span className="tapahtumaaika">Sunnuntaina 30.4.</span><span className="tapahtuma">Lakitus</span></div>
+                  <div className="collapsible-body row">
+                    <span className="col s12 l6 m12">Fuksit saavat vihdoin lakit.</span>
+
+                    <iframe className="col s12 l6 m12" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1967.2045731375958!2d22.281901316492235!3d60.45834598206804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNjDCsDI3JzMwLjEiTiAyMsKwMTcnMDIuNyJF!5e0!3m2!1sfi!2sfi!4v1487177864063" height="450" frameborder="0"></iframe>
+                  </div>
                 </li>
               </ul>
-
             </div>
           </div>
-          <div className="padding20 col m12 l4">
-            <div className="grey lighten-5 card">
-              <div className="padding20 card black lighten-2 white-text">
-                <h5>Info</h5>
+
+          <div className="padding20 col s12 m12 l4">
+            <div className="grey lighten-5 card flex-column">
+              <div className="padding20 card black lighten-2 white-text nomargin">
+                <h5>Miten osallistun?</h5>
               </div>
               <div className="margin20">
+                <ul className="collection nomargin">
+                  <li className="collection-item">Osta ebin passi</li>
+                  <li className="collection-item">Kerää passiin leimoja käymällä tapahumissa ja näyttämällä passia keltalakkisille hepuille</li>
+                  <li className="collection-item">Palauta passi keltalakkisille hepuille ja vastaanota n määrä hienoja wappuputkia</li>
+                  <li className="collection-item">Profit???</li>
+                </ul>
+              </div>
+            </div>
 
-
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce accumsan pellentesque mauris et feugiat. Ut sodales, ipsum ut pulvinar consequat, nunc ante bibendum purus, ac molestie enim risus sed lorem. Praesent vulputate ligula nec ipsum lobortis, eget molestie nisi tristique. In nec ornare justo, quis dictum turpis. Fusce non magna felis. Suspendisse potenti. Phasellus tincidunt ipsum eleifend tortor iaculis, vitae aliquet dolor tristique. Etiam sed erat accumsan sem finibus efficitur. Ut posuere at lectus eget condimentum. Fusce nunc lacus, mattis et dolor vel, rutrum cursus nibh. Aliquam erat volutpat. Sed eget leo dolor. Donec tincidunt eget ipsum ut tincidunt. Nam ac orci ante.
-  </p>
-                <p>
-                  Suspendisse sed lectus turpis. Mauris tristique id elit vel volutpat. Aliquam sem elit, varius vitae velit et, ornare viverra lorem. Morbi vulputate tincidunt lectus a hendrerit. Proin vulputate turpis eu metus fringilla ullamcorper. Duis sed leo volutpat, sodales augue eu, accumsan est. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam neque risus, tristique ac augue quis, auctor volutpat lorem.
-</p>
-                <p>
-                  Aenean sagittis erat nec varius sollicitudin. Maecenas quam ex, tempus a feugiat at, rutrum non urna. Integer quis suscipit erat. Maecenas non ipsum vitae ligula egestas efficitur ut sit amet dolor. Aenean mollis, tellus vel molestie tempor, augue lorem aliquet leo, vitae molestie urna lorem eu ligula. Vestibulum dapibus pretium nunc, tempor varius risus tempus quis. Phasellus vel tincidunt tortor, in blandit nibh. Sed vitae diam interdum dolor convallis laoreet efficitur sit amet neque. Maecenas feugiat felis lobortis, finibus lacus rutrum, aliquet est. Nam et pretium leo. Proin mollis sit amet est vitae euismod. Aliquam non sollicitudin arcu. Suspendisse potenti.
-</p>
-                <p>
-                  Proin lacus nulla, rhoncus mollis mattis ac, ullamcorper sit amet enim. Donec nec ornare lorem, eu laoreet est. Etiam tincidunt justo et neque posuere finibus nec sed sapien. Mauris ultricies mauris sapien, eu egestas purus scelerisque ut. Nunc ultrices dapibus libero, et venenatis augue malesuada quis. Maecenas accumsan, lacus posuere varius dapibus, mauris ex congue justo, sit amet cursus nisi felis at lorem. Proin convallis, orci in dictum eleifend, metus ante dapibus metus, nec mattis erat dolor id odio. Nunc mattis interdum tempus. Cras ut velit ligula. Pellentesque nec eleifend neque. Donec ac nunc ac ex bibendum ultrices a vel purus. Vivamus pharetra volutpat metus ut laoreet.
-</p>
-                <p>
-                  Duis quis sapien ultricies, viverra enim in, gravida nisl. Donec turpis tortor, bibendum vestibulum gravida ac, egestas a quam. Suspendisse enim nisl, accumsan vitae fringilla in, ornare nec arcu. Duis semper ac odio ut aliquet. Mauris vehicula lacus nec odio ultrices consequat. Vestibulum tortor nulla, luctus vehicula auctor eu, vestibulum interdum metus. Fusce id turpis ut ligula ultricies bibendum. Vivamus sollicitudin, lorem sed consequat porta, felis quam dictum dolor, non iaculis lectus mauris eu leo. Etiam et mauris massa. Integer vulputate nulla a nulla scelerisque, ac convallis enim tempor. Donec luctus orci vel enim accumsan, in pharetra leo ullamcorper. Maecenas non purus eget velit scelerisque rutrum ac vel ante.
-</p>
+            <div className="grey lighten-5 card flex-column">
+              <div className="padding20 card black lighten-2 white-text nomargin">
+                <h5>Jokes on you</h5>
+              </div>
+              <div className="margin20">
+                <ul className="collection nomargin">
+                  <li className="collection-item">
+                  Iron Maidenin jätkät oli kalassa Keskimaassa ja rannalle tuli pelottava tyyppi huutelemaan jotain sekavia. Bruce jo ehti hätääntyä, mutta Steve oli heti tilanteen tasalla ja sanoi: "Ei hätää, sehän on vain Gimli." Tähän Bruce helpottuneena vastasi: "Ai, ei siis Uruk-Hai."
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
+
         </div>
       </div>
     );
