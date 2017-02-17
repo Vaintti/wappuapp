@@ -62,7 +62,13 @@ class App extends Component {
               </h5>
             </div>
             <div className="col s12 l4 m12">
-              <a className="digit" href="http://digit.fi/">Digit</a> <a className="nucleus" href="http://nucleus.fi/">Nucleus</a> <a className="asteriski" href="https://www.asteriski.fi/">Asteriski</a>
+              <a className="jarjesto" href="http://digit.fi/">Digit</a>
+              <a className="jarjesto" href="http://nucleus.fi/">Nucleus</a>
+              <br></br>
+              Mukana menossa myös
+              <a className="jarjesto" href="https://www.asteriski.fi/">Asteriski</a>
+              ja
+              <a className="jarjesto" href="http://www.tio.fi/">TIO</a>
             </div>
           </div>
         </div>
@@ -70,14 +76,14 @@ class App extends Component {
           <div className="padding20 col s12 m12 l8">
             <div className="grey lighten-5 card flex-column">
               <div className="padding20 card black lighten-2 white-text nomargin">
-                <h5>Viikon tapahtumat</h5>
+                <h5>Seuraavat tapahtumat</h5>
               </div>
 
               <ul className="collapsible popout margin20topbottom" data-collapsible="accordion">
                 <li>
-                  <div className="collapsible-header flex"><span className="tapahtumaaika">Keskiviikkona 12.4. klo. 22:00</span><span className="tapahtuma">Wapunaloitusbileet</span></div>
+                  <div className="collapsible-header flex active"><span className="tapahtumaaika">Keskiviikkona 12.4. klo. 22:00</span><span className="tapahtuma">Wapunaloitusbileet</span></div>
                   <div className="collapsible-body row">
-                    <span className="col s12 l6 m12">Juhlitaan wapun alkamista Night Club Vegasin tanssilattialla ja sen ympäristössä.</span>
+                    <span className="col s12 l6 m12">Juhlitaan wapun alkamista Night Club Vegasin tanssilattialla.</span>
                     <iframe className="col s12 l6 m12" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1967.7490721141119!2d22.260436616410438!3d60.44935788206473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x468c76feb6c9a773%3A0xa9a4e10fd4201e45!2sCasino+Night+Club+Vegas!5e0!3m2!1sfi!2sfi!4v1487333708672" height="300px" frameborder="0"></iframe>
                   </div>
                 </li>
@@ -120,18 +126,34 @@ class App extends Component {
 
             <div className="grey lighten-5 card flex-column">
               <div className="padding20 card black lighten-2 white-text nomargin">
-                <h5>Jokes on you</h5>
+                <h5>Vitsihuumoria</h5>
               </div>
               <div className="margin20">
                 <ul className="collection nomargin">
                   <li className="collection-item">
-                  Iron Maidenin jätkät oli kalassa Keskimaassa ja rannalle tuli pelottava tyyppi huutelemaan jotain sekavia. Bruce jo ehti hätääntyä, mutta Steve oli heti tilanteen tasalla ja sanoi: "Ei hätää, sehän on vain Gimli." Tähän Bruce helpottuneena vastasi: "Ai, ei siis Uruk-Hai."
+                    Iron Maidenin jätkät oli kalassa Keskimaassa ja rannalle tuli pelottava tyyppi huutelemaan jotain sekavia. Bruce jo ehti hätääntyä, mutta Steve oli heti tilanteen tasalla ja sanoi: "Ei hätää, sehän on vain Gimli." Tähän Bruce helpottuneena vastasi: "Ai, ei siis Uruk-Hai."
                   </li>
                 </ul>
               </div>
             </div>
-          </div>
 
+            <div className="grey lighten-5 card flex-column">
+              <div className="padding20 card black lighten-2 white-text nomargin">
+                <h5>Oispa someintegraatiot</h5>
+              </div>
+              <div className="margin20">
+                <ul className="collection nomargin">
+                  <li className="collection-item">
+                    insert instagram
+                  </li>
+                  <li className="collection-item">
+                    insert facebook
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
         </div>
       </div>
     );

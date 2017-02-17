@@ -43,17 +43,7 @@
   font-style: italic;
 }
 
-.digit {
-  border-radius: 10px;
-  padding: 3px 7px 3px 7px;
-}
-
-.asteriski {
-  border-radius: 10px;
-  padding: 3px 7px 3px 7px;
-}
-
-.nucleus {
+.jarjesto {
   border-radius: 10px;
   padding: 3px 7px 3px 7px;
 }
