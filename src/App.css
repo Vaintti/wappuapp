@@ -31,11 +31,22 @@
 
 .tapahtuma {
   flex-grow: 1;
+  font-weight: bold;
+  line-height: 110%;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .tapahtumaaika {
   text-align: left;
-  margin-right: 20px;
+  margin-right: 10px;
+  width: 100px;
+  min-width: 100px;
+  max-width: 100px;
+  font-weight: bold;
+  line-height: 110%;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .italic {
@@ -54,10 +65,6 @@
 .flex-column {
   display: flex;
   flex-direction: column;
-}
-
-.kuvaus {
-  font-size: 1.5em;
 }
 
 a {
