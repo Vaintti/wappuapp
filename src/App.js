@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import moment from 'moment';
 import Tapahtuma from './Tapahtuma.js';
 import logo from './larjestotlogo.png';
 import './App.css';
@@ -209,7 +210,7 @@ class App extends Component {
               <ul className="collapsible popout margin20topbottom" data-collapsible="accordion">
 
               {this.state.tapahtumat.map(function(tapahtuma, i) {
-                return <Tapahtuma aika={tapahtuma.aika.toLocaleDateString([], {hour: '2-digit', minute: '2-digit'})} nimi={tapahtuma.nimi} kuvaus={tapahtuma.kuvaus} kartta={tapahtuma.kartta}/>
+                return <Tapahtuma aika={moment(tapahtuma.aika).format('dddd do h:MM')} nimi={tapahtuma.nimi} kuvaus={tapahtuma.kuvaus} kartta={tapahtuma.kartta}/>
               })}
 
               </ul>
