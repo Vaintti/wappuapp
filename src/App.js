@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Instafeed from 'instafeed.js';
 import moment from 'moment';
 import Tapahtuma from './Tapahtuma.js';
 import logo from './larjestotlogo.png';
@@ -190,11 +191,19 @@ class App extends Component {
     else {
       this.setState({ sekuntit: this.state.vappuun.getSeconds() })
     }
+
+    var feed = new Instafeed({
+        get: 'tagged',
+        tagName: 'turussakinonteekkareita',
+        clientId: 'f758e4770f334335b48f6540b904ad72'
+    });
+    feed.run();
   }
 
   componentWillUnmount() {
     clearInterval(this.interval);
   }
+
   render() {
     return (
       <div className="App">
@@ -275,6 +284,7 @@ class App extends Component {
                 <ul className="collection nomargin">
                   <li className="collection-item">
                     insert instagram
+                    <div id="instafeed"></div>
                   </li>
                   <li className="collection-item">
                     <div className="fb-page" data-href="https://www.facebook.com/digitry" data-width="2000px" data-tabs="timeline" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/nucleusry" className="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/nucleusry">Nucleus ry</a></blockquote></div>

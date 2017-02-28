@@ -49,6 +49,11 @@
   margin-bottom: 20px;
 }
 
+#instafeed {
+  min-width: 300px;
+  min-height: 300px;
+}
+
 .kartta {
   margin-top: 0px;
 }
