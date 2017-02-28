@@ -32,21 +32,29 @@
 .tapahtuma {
   flex-grow: 1;
   font-weight: bold;
-  line-height: 110%;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  line-height: 150%;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .tapahtumaaika {
   text-align: left;
   margin-right: 10px;
-  width: 100px;
-  min-width: 100px;
-  max-width: 100px;
+  width: 80px;
+  min-width: 80px;
+  max-width: 80px;
   font-weight: bold;
-  line-height: 110%;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  line-height: 150%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 480px) {
+  .tapahtumaaika {
+    width: 160px;
+    min-width: 160px;
+    max-width: 160px;
+  }
 }
 
 .italic {

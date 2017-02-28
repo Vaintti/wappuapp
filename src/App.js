@@ -210,7 +210,7 @@ class App extends Component {
               <ul className="collapsible popout margin20topbottom" data-collapsible="accordion">
 
               {this.state.tapahtumat.map(function(tapahtuma, i) {
-                return <Tapahtuma aika={moment(tapahtuma.aika).format('dddd do h:MM')} nimi={tapahtuma.nimi} kuvaus={tapahtuma.kuvaus} kartta={tapahtuma.kartta}/>
+                return <Tapahtuma aika={moment(tapahtuma.aika).lang('fi').format('dd DD.MM')+" klo "+moment(tapahtuma.aika).format('hh:mm')} nimi={tapahtuma.nimi} kuvaus={tapahtuma.kuvaus} kartta={tapahtuma.kartta}/>
               })}
 
               </ul>
