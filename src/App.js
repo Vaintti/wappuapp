@@ -232,7 +232,8 @@ class App extends Component {
               <ul className="collapsible popout margin20topbottom" data-collapsible="accordion">
 
               {this.state.tapahtumat.map(function(tapahtuma, i) {
-                return <Tapahtuma aika={moment(tapahtuma.aika).lang('fi').format('dd DD.MM')+" klo "+moment(tapahtuma.aika).format('hh:mm')} nimi={tapahtuma.nimi} kuvaus={tapahtuma.kuvaus} kartta={tapahtuma.kartta}/>
+                // moment(tapahtuma.aika).lang('fi').format('dd DD.MM')+" klo "+moment(tapahtuma.aika).format('hh:mm')
+                return <Tapahtuma aika={"TBD"} nimi={tapahtuma.nimi} kuvaus={tapahtuma.kuvaus} kartta={tapahtuma.kartta}/>
               })}
 
               </ul>
@@ -247,8 +248,8 @@ class App extends Component {
               <div className="margin20">
                 <ul className="collection nomargin">
                   <li className="collection-item">Osta ebin passi</li>
-                  <li className="collection-item">Kerää passiin leimoja käymällä tapahumissa ja näyttämällä passia keltalakkisille hepuille</li>
-                  <li className="collection-item">Palauta passi keltalakkisille hepuille ja vastaanota n määrä hienoja wappuputkia</li>
+                  <li className="collection-item">Kerää passiin leimoja käymällä tapahtumissa ja näyttämällä passia keltalakkisille hepuille</li>
+                  <li className="collection-item">Palauta passi keltalakkisille hepuille ja vastaanota n määrä hienoja wappuputkihaalarimerkkejä</li>
                   <li className="collection-item">Profit???</li>
                 </ul>
               </div>
