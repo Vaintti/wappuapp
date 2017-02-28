@@ -139,14 +139,20 @@ class App extends Component {
       "kuvaus": "TYY järjestää perinteisen vappupiknikin Vartiovuorenmäellä, jossa on enemmän tai vähemmän tapahtumaa ja pahaa oloa. Tähän päättyy Wapun taika ja tätä seuraa vain kesä ja aurinko ja darra ja loputon rahavirta...",
       "kartta": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7871.797841846822!2d22.284369299999998!3d60.44604985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa9a4e10fd4201e45!2sCasino+Night+Club+Vegas!5e0!3m2!1sfi!2sfi!4v1488280295496"
     }];
-    this.state = { vappuun: timetowappu, tunnit: 0, minuutit: 0, sekuntit: 0, tapahtumat: tapahtumat };
+    this.state = { vappuun: timetowappu, päivät: 0, tunnit: 0, minuutit: 0, sekuntit: 0, tapahtumat: tapahtumat };
   }
 
   tick() {
     this.setState((prevState) => ({
       vappuun: new Date(Date.parse(prevState.vappuun) - 1),
-      tunnit: Math.floor(Date.parse(this.state.vappuun) / 1000 / 60 / 60)
+      päivät: Math.floor(Date.parse(this.state.vappuun) / 1000 / 60 / 60 / 24)
     }));
+    if (this.state.vappuun.getHours() < 10) {
+      this.setState({ tunnit: 0 + '' + this.state.vappuun.getHours() })
+    }
+    else {
+      this.setState({ tunnit: this.state.vappuun.getHours() })
+    }
     if (this.state.vappuun.getMinutes() < 10) {
       this.setState({ minuutit: 0 + '' + this.state.vappuun.getMinutes() })
     }
@@ -164,10 +170,26 @@ class App extends Component {
   componentDidMount() {
     this.interval = setInterval(() => this.tick(), 1000);
     this.setState({
-      tunnit: Math.floor(Date.parse(this.state.vappuun) / 1000 / 60 / 60),
-      minuutit: this.state.vappuun.getMinutes(),
-      sekuntit: this.state.vappuun.getSeconds()
+      päivät: Math.floor(Date.parse(this.state.vappuun) / 1000 / 60 / 60 / 24),
     })
+    if (this.state.vappuun.getHours() < 10) {
+      this.setState({ tunnit: 0 + '' + this.state.vappuun.getHours() })
+    }
+    else {
+      this.setState({ tunnit: this.state.vappuun.getHours() })
+    }
+    if (this.state.vappuun.getMinutes() < 10) {
+      this.setState({ minuutit: 0 + '' + this.state.vappuun.getMinutes() })
+    }
+    else {
+      this.setState({ minuutit: this.state.vappuun.getMinutes() })
+    }
+    if (this.state.vappuun.getSeconds() < 10) {
+      this.setState({ sekuntit: 0 + '' + this.state.vappuun.getSeconds() })
+    }
+    else {
+      this.setState({ sekuntit: this.state.vappuun.getSeconds() })
+    }
   }
 
   componentWillUnmount() {
@@ -186,7 +208,7 @@ class App extends Component {
             </div>
             <div className="col s12 l4 m12">
               <h5>
-                {this.state.tunnit}:{this.state.minuutit}:{this.state.sekuntit}
+                {this.state.päivät}:{this.state.tunnit}:{this.state.minuutit}:{this.state.sekuntit}
               </h5>
             </div>
             <div className="col s12 l4 m12">
@@ -194,9 +216,9 @@ class App extends Component {
               <a className="jarjesto" href="http://nucleus.fi/">Nucleus</a>
               <br></br>
               Mukana menossa myös
-              <a className="jarjesto" href="https://www.asteriski.fi/">Asteriski</a>
+              <a className="jarjesto pikkujarjesto" href="https://www.asteriski.fi/">Asteriski</a>
               ja
-              <a className="jarjesto" href="http://www.tio.fi/">TIO</a>
+              <a className="jarjesto pikkujarjesto" href="http://www.tio.fi/">TIO</a>
             </div>
           </div>
         </div>
@@ -255,7 +277,9 @@ class App extends Component {
                     insert instagram
                   </li>
                   <li className="collection-item">
-                    insert facebook
+                    <div className="fb-page" data-href="https://www.facebook.com/digitry" data-width="2000px" data-tabs="timeline" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/nucleusry" className="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/nucleusry">Nucleus ry</a></blockquote></div>
+
+                    <div className="fb-page" data-href="https://www.facebook.com/nucleusry" data-width="2000px" data-tabs="timeline" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/nucleusry" className="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/nucleusry">Nucleus ry</a></blockquote></div>
                   </li>
                 </ul>
               </div>

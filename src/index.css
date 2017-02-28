@@ -4,12 +4,3 @@ body, .root, .App {
   min-height: 100vh;
   font-family: 'Comfortaa', cursive;
 }
-
-.bodybg{
-  background-image: url(eldprovet.jpg);
-  background-size: cover;
-}
-
-.App {
-  background-color: rgba(251, 192, 0, 0.4);
-}
