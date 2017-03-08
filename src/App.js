@@ -17,7 +17,7 @@ class App extends Component {
       "aika": wappudate,
       "nimi": "Wapunwarastusristeily",
       "kuvaus": "Wappuhan alkaa perinteisesti Wapunaloitusbileillä, mutta tilaisuus tekee varkaan ja wapun voikin aloittaa jo päivää aiemmin Itämeren laineilla. Mainio tilaisuus täydentää nestevarastojaan wapun seikkailuja varten!",
-      "kartta": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1985.1900134253021!2d24.956484316378454!3d60.1610331819576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46920bc726ade845%3A0xd6c7d3f9101ec10d!2sSilja+Line+-terminaali!5e0!3m2!1sfi!2sfi!4v1488291053994"
+      "kartta": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1968.6033946270466!2d22.21720401637564!3d60.4352538820594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x468c77a4dd5870ef%3A0xfca204bc362d95a1!2sTurun+Silja+Linen+terminaali!5e0!3m2!1sfi!2sfi!4v1488974673147"
     },
     {
       "aika": wappudate,
@@ -94,7 +94,7 @@ class App extends Component {
     {
       "aika": wappudate,
       "nimi": "Typerien pelien ilta by TK ja Pelikerho",
-      "kuvaus": "Ongelmanratkaisu ja autismointi ovat avaimet jokaisen sodan voittamiseen. Ainakin teekkareiden piireissä. TeekkariKomissio ja Pelikerho järjestävät lautapeli-illan, jotta darraiset aivonystyrät pistetään töihin ja taistelutoverista haetaan murskavoittoa ja nöyryytystä. ",
+      "kuvaus": "Ongelmanratkaisu ja autismointi ovat avaimet jokaisen sodan voittamiseen. Ainakin teekkareiden piireissä. TeekkariKomissio ja Pelikerho järjestävät lautapeli-illan, jotta darraiset aivonystyrät pistetään töihin ja taistelutoverista haetaan murskavoittoa ja nöyryytystä. Sijaintina B",
       "kartta": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126000.98873356925!2d22.08531956483999!3d60.43257830680526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x468c7584818edbbb%3A0x400b551554bc200!2sTurku!5e0!3m2!1sfi!2sfi!4v1488969451889"
     },
     {
