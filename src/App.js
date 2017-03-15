@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Instafeed from 'instafeed.js';
 import moment from 'moment';
 import Tapahtuma from './Tapahtuma.js';
 import logo from './larjestotlogo.png';
@@ -191,13 +190,6 @@ class App extends Component {
     else {
       this.setState({ sekuntit: this.state.vappuun.getSeconds() })
     }
-
-    var feed = new Instafeed({
-        get: 'tagged',
-        tagName: 'turussakinonteekkareita',
-        clientId: 'f758e4770f334335b48f6540b904ad72'
-    });
-    feed.run();
   }
 
   componentWillUnmount() {
@@ -279,7 +271,7 @@ class App extends Component {
 
             <div className="grey lighten-5 card flex-column">
               <div className="padding20 card orange lighten-1 white-text nomargin">
-                <h5>Oispa someintegraatiot</h5>
+                <h5>Some</h5>
               </div>
               <div className="margin20">
                 <ul className="collection nomargin">
