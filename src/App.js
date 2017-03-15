@@ -208,7 +208,7 @@ class App extends Component {
     return (
       <div className="App">
         <div className="row nomargin">
-          <div className="App-header card nomargin black lighten-1 white-text">
+          <div className="App-header card nomargin orange white-text">
             <div className="col s1 l1 m1 logo">
               <img src={logo} alt="logo" height="50px"></img>
             </div>
@@ -234,7 +234,7 @@ class App extends Component {
         <div className="row">
           <div className="padding20 col s12 m12 l8">
             <div className="grey lighten-5 card flex-column">
-              <div className="padding20 card black lighten-2 white-text nomargin">
+              <div className="padding20 card orange lighten-1 white-text nomargin">
                 <h5>Seuraavat tapahtumat</h5>
               </div>
 
@@ -251,7 +251,7 @@ class App extends Component {
 
           <div className="padding20 col s12 m12 l4">
             <div className="grey lighten-5 card flex-column">
-              <div className="padding20 card black lighten-2 white-text nomargin">
+              <div className="padding20 card orange lighten-1 white-text nomargin">
                 <h5>Miten osallistun?</h5>
               </div>
               <div className="margin20">
@@ -265,7 +265,7 @@ class App extends Component {
             </div>
 
             <div className="grey lighten-5 card flex-column">
-              <div className="padding20 card black lighten-2 white-text nomargin">
+              <div className="padding20 card orange lighten-1 white-text nomargin">
                 <h5>Vitsihuumoria</h5>
               </div>
               <div className="margin20">
@@ -278,15 +278,15 @@ class App extends Component {
             </div>
 
             <div className="grey lighten-5 card flex-column">
-              <div className="padding20 card black lighten-2 white-text nomargin">
+              <div className="padding20 card orange lighten-1 white-text nomargin">
                 <h5>Oispa someintegraatiot</h5>
               </div>
               <div className="margin20">
                 <ul className="collection nomargin">
                   <li className="collection-item">
-                    <div className="fb-page" data-href="https://www.facebook.com/digitry" data-width="2000px" data-tabs="timeline" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/nucleusry" className="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/nucleusry">Nucleus ry</a></blockquote></div>
+                    <div className="fb-page margin20topbottom" data-href="https://www.facebook.com/digitry" data-width="2000px" data-tabs="timeline" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/nucleusry" className="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/nucleusry">Nucleus ry</a></blockquote></div>
 
-                    <div className="fb-page" data-href="https://www.facebook.com/nucleusry" data-width="2000px" data-tabs="timeline" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/nucleusry" className="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/nucleusry">Nucleus ry</a></blockquote></div>
+                    <div className="fb-page margin20topbottom" data-href="https://www.facebook.com/nucleusry" data-width="2000px" data-tabs="timeline" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/nucleusry" className="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/nucleusry">Nucleus ry</a></blockquote></div>
                   </li>
                 </ul>
               </div>
