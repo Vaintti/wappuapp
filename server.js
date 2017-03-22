@@ -5,6 +5,8 @@ app.use(express.static('build'))
 
 app.set('port',process.env.PORT || 3001)
 
+require('./api/vitsit')(app)
+
 app.listen(app.get('port'), function () {
-  console.log('Server listening on port 3001!')
+  console.log('Server listening!')
 })

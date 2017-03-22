@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import moment from 'moment';
 import Tapahtuma from './Tapahtuma.js';
+import axios from 'axios';
 import logo from './larjestotlogo.png';
 import './App.css';
 
@@ -139,7 +140,7 @@ class App extends Component {
       "kuvaus": "TYY järjestää perinteisen vappupiknikin Vartiovuorenmäellä, jossa on enemmän tai vähemmän tapahtumaa ja pahaa oloa. Tähän päättyy Wapun taika ja tätä seuraa vain kesä ja aurinko ja darra ja loputon rahavirta...",
       "kartta": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1967.806925231554!2d22.274800906323037!3d60.44840284777761!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x468c76e49b503197%3A0xf69309ed7fb864e4!2sTurun+Kes%C3%A4teatteri!5e0!3m2!1sfi!2sfi!4v1488291402090"
     }];
-    this.state = { vappuun: timetowappu, päivät: 0, tunnit: 0, minuutit: 0, sekuntit: 0, tapahtumat: tapahtumat };
+    this.state = { vappuun: timetowappu, päivät: 0, tunnit: 0, minuutit: 0, sekuntit: 0, tapahtumat: tapahtumat, vitsi: "" };
   }
 
   tick() {
@@ -167,6 +168,10 @@ class App extends Component {
     }
   }
 
+  setVitsi(vitsi) {
+    this.state.setState({ vitsi: vitsi });
+  }
+
   componentDidMount() {
     this.interval = setInterval(() => this.tick(), 1000);
     this.setState({
@@ -190,6 +195,14 @@ class App extends Component {
     else {
       this.setState({ sekuntit: this.state.vappuun.getSeconds() })
     }
+    axios.get('/vitsit/getVitsi')
+    .then(function(result) {
+      console.log(result);
+      this.setState({ vitsi: result.data});
+    }.bind(this))
+    .catch(function(error){
+      console.log(error);
+    });
   }
 
   componentWillUnmount() {
@@ -263,7 +276,7 @@ class App extends Component {
               <div className="margin20">
                 <ul className="collection nomargin">
                   <li className="collection-item">
-                    Iron Maidenin jätkät oli kalassa Keskimaassa ja rannalle tuli pelottava tyyppi huutelemaan jotain sekavia. Bruce jo ehti hätääntyä, mutta Steve oli heti tilanteen tasalla ja sanoi: "Ei hätää, sehän on vain Gimli." Tähän Bruce helpottuneena vastasi: "Ai, ei siis Uruk-Hai."
+                    {this.state.vitsi}
                   </li>
                 </ul>
               </div>
@@ -274,11 +287,14 @@ class App extends Component {
                 <h5>Some</h5>
               </div>
               <div className="margin20">
-                <ul className="collection nomargin">
+                <ul className="collection">
                   <li className="collection-item">
-                    <div className="fb-page margin20topbottom" data-href="https://www.facebook.com/digitry" data-width="2000px" data-tabs="timeline" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/nucleusry" className="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/nucleusry">Nucleus ry</a></blockquote></div>
-
-                    <div className="fb-page margin20topbottom" data-href="https://www.facebook.com/nucleusry" data-width="2000px" data-tabs="timeline" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/nucleusry" className="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/nucleusry">Nucleus ry</a></blockquote></div>
+                    <div className="fb-page" data-href="https://www.facebook.com/digitry" data-width="2000px" data-tabs="timeline" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/nucleusry" className="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/nucleusry">Nucleus ry</a></blockquote></div>
+                  </li>
+                </ul>
+                <ul className="collection">
+                  <li className="collection-item">
+                    <div className="fb-page" data-href="https://www.facebook.com/nucleusry" data-width="2000px" data-tabs="timeline" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/nucleusry" className="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/nucleusry">Nucleus ry</a></blockquote></div>
                   </li>
                 </ul>
               </div>
