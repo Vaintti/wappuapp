@@ -8,9 +8,15 @@ import './App.css';
 class App extends Component {
   constructor(props) {
     super(props);
-    var wappudate = new Date(2017, 3, 12);
-    console.log(wappudate.toString());
-    var timetowappu = new Date(Date.parse(wappudate) - Date.parse(Date()));
+    var wappudate = new Date(2017, 4, 1);
+    var wapunalku = new Date(2017, 3, 10)
+    var timetowappu;
+    if(Date.parse(wapunalku) > Date.parse(Date())){
+      timetowappu = new Date(Date.parse(wapunalku) - Date.parse(Date()));
+    }
+    else {
+      timetowappu = new Date(Date.parse(wappudate) - Date.parse(Date()));
+    }
     var tapahtumat = [{
       "aika": wappudate,
       "nimi": "Wapunwarastusristeily",
