@@ -9,7 +9,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     var wappudate = new Date(2017, 4, 1);
-    var wapunalku = new Date(2017, 3, 10)
+    var wapunalku = new Date(2017, 3, 11)
     var timetowappu;
     if(Date.parse(wapunalku) > Date.parse(Date())){
       timetowappu = new Date(Date.parse(wapunalku) - Date.parse(Date()));
@@ -18,7 +18,7 @@ class App extends Component {
       timetowappu = new Date(Date.parse(wappudate) - Date.parse(Date()));
     }
     var tapahtumat = [{
-      "aika": new Date(2017, 3, 10),
+      "aika": new Date(2017, 3, 11),
       "nimi": "Wapunwarastusristeily",
       "kuvaus": "Wappuhan alkaa perinteisesti Wapunaloitusbileillä, mutta tilaisuus tekee varkaan ja wapun voikin aloittaa jo päivää aiemmin Itämeren laineilla. Mainio tilaisuus täydentää nestevarastojaan wapun seikkailuja varten!",
       "kartta": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1968.6033946270466!2d22.21720401637564!3d60.4352538820594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x468c77a4dd5870ef%3A0xfca204bc362d95a1!2sTurun+Silja+Linen+terminaali!5e0!3m2!1sfi!2sfi!4v1488974673147"
@@ -242,6 +242,12 @@ class App extends Component {
         </div>
         <div className="row">
           <div className="padding20 col s12 m12 l8">
+            <div className="grey lighten-5 card flex-column">
+              <div className="video-container">
+                <iframe className="video-element" src="https://www.youtube.com/embed/7zKnVEAjeEQ"></iframe>
+              </div>
+            </div>
+
             <div className="grey lighten-5 card flex-column">
               <div className="padding20 card orange lighten-1 white-text nomargin">
                 <h5>Seuraavat tapahtumat</h5>
