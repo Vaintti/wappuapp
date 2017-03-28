@@ -8,10 +8,7 @@ import './App.css';
 class App extends Component {
   constructor(props) {
     super(props);
-    var wappuyear = 2017;
-    var wappumonth = 4;
-    var wappuday = 1;
-    var wappudate = new Date(wappuyear, wappumonth, wappuday);
+    var wappudate = new Date(2017, 3, 12);
     console.log(wappudate.toString());
     var timetowappu = new Date(Date.parse(wappudate) - Date.parse(Date()));
     var tapahtumat = [{
