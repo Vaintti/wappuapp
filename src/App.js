@@ -8,14 +8,16 @@ import './App.css';
 class App extends Component {
   constructor(props) {
     super(props);
-    var wappudate = new Date(Date.UTC(2017, 4, 1));
-    var wapunalku = new Date(Date.UTC(2017, 3, 11));
+    var wappudate = new Date(2017, 4, 1);
+    var wapunalku = new Date(2017, 3, 11);
+    var now = new Date();
+    now = new Date(Date.parse(now)+1000*60*60*2);
     var timetowappu;
-    if(Date.parse(wapunalku) > Date.parse(Date())){
-      timetowappu = new Date(Date.parse(wapunalku) - Date.parse(Date()));
+    if(Date.parse(wapunalku) > Date.parse(new Date())){
+      timetowappu = new Date(Date.parse(wapunalku) - Date.parse(now));
     }
     else {
-      timetowappu = new Date(Date.parse(wappudate) - Date.parse(Date()));
+      timetowappu = new Date(Date.parse(wappudate) - Date.parse(now));
     }
     var tapahtumat = [{
       "aika": new Date(2017, 3, 11),
@@ -169,10 +171,6 @@ class App extends Component {
     else {
       this.setState({ sekuntit: this.state.vappuun.getSeconds() })
     }
-  }
-
-  setVitsi(vitsi) {
-    this.state.setState({ vitsi: vitsi });
   }
 
   componentDidMount() {
