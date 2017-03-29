@@ -243,7 +243,7 @@ class App extends Component {
           <div className="padding20 col s12 m12 l8">
             <div className="grey lighten-5 card flex-column">
               <div className="video-container">
-                <iframe className="video-element" src="https://www.youtube.com/embed/7zKnVEAjeEQ"></iframe>
+                <iframe className="video-element" src="https://www.youtube.com/embed/7zKnVEAjeEQ" allowFullScreen></iframe>
               </div>
             </div>
 
