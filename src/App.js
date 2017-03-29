@@ -2,14 +2,14 @@ import React, { Component } from 'react';
 import moment from 'moment';
 import Tapahtuma from './Tapahtuma.js';
 import axios from 'axios';
-import logo from './larjestotlogo.png';
+import logo from './digleus.png';
 import './App.css';
 
 class App extends Component {
   constructor(props) {
     super(props);
-    var wappudate = new Date(2017, 4, 1);
-    var wapunalku = new Date(2017, 3, 11)
+    var wappudate = new Date(Date.UTC(2017, 4, 1));
+    var wapunalku = new Date(Date.UTC(2017, 3, 11));
     var timetowappu;
     if(Date.parse(wapunalku) > Date.parse(Date())){
       timetowappu = new Date(Date.parse(wapunalku) - Date.parse(Date()));
@@ -215,12 +215,12 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className="row nomargin">
+        <div className="row nomargin baselinealign">
           <div className="App-header card nomargin orange white-text">
-            <div className="col s1 l1 m1 logo">
-              <img src={logo} alt="logo" height="50px"></img>
+            <div className="col s12 l1 m12 logo">
+              <img src={logo} height="70px" alt="logo"></img>
             </div>
-            <div className="col s11 l3 m11">
+            <div className="col s12 l3 m12">
               <h4>Turun Teekkariwappu</h4>
             </div>
             <div className="col s12 l4 m12">
@@ -233,6 +233,7 @@ class App extends Component {
               <a className="jarjesto" href="http://nucleus.fi/">Nucleus</a>
               <br></br>
               Mukana menossa myös
+              <br></br>
               <a className="jarjesto pikkujarjesto" href="https://www.asteriski.fi/">Asteriski</a>
               <a className="jarjesto pikkujarjesto" href="http://teekkarikomissio.utu.fi/fi/index.html">Teekkarikomissio</a>
               ja
