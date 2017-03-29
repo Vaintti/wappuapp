@@ -20,10 +20,16 @@ class App extends Component {
       timetowappu = new Date(Date.parse(wappudate) - Date.parse(now));
     }
     var tapahtumat = [{
-      "aika": new Date(2017, 3, 11),
+      "aika": new Date(2017, 3, 10),
       "nimi": "Wapunwarastusristeily",
       "kuvaus": "Wappuhan alkaa perinteisesti Wapunaloitusbileillä, mutta tilaisuus tekee varkaan ja wapun voikin aloittaa jo päivää aiemmin Itämeren laineilla. Mainio tilaisuus täydentää nestevarastojaan wapun seikkailuja varten!",
       "kartta": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1968.6033946270466!2d22.21720401637564!3d60.4352538820594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x468c77a4dd5870ef%3A0xfca204bc362d95a1!2sTurun+Silja+Linen+terminaali!5e0!3m2!1sfi!2sfi!4v1488974673147"
+    },
+    {
+      "aika": new Date(2017, 3, 11),
+      "nimi": "Ninnin sikarikerho",
+      "kuvaus": "Jo klassikoksi muodostunut Ninnin sikarikerho tulee taas! Tänäkin vuonna on tarjolla jotain vanhaa ja uutta: kuumia koiria, Olut-bingoa, Nucleuksen Panokerhon simaa ja totta kai sikareita! Grilli on kuumana koko illan, joten omiakin grillattavia voi tuoda mukanaa. Nappaa siis mukaan oma valintaiset juomasi (voidaksesi osallistua Olut-bingoon tulee sinulla olla yksi (1) juoma laitettavaksi palkintopottiin) ja ruokasi ja tule viettämään rento ilta SDP:n kerhotalolla (Hämeentie 25). Omat pihapelit ovat myös tervetulleita!",
+      "kartta": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126000.98873356925!2d22.08531956483999!3d60.43257830680526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x468c7584818edbbb%3A0x400b551554bc200!2sTurku!5e0!3m2!1sfi!2sfi!4v1488969451889"
     },
     {
       "aika": new Date(2017, 3, 12),
@@ -99,8 +105,8 @@ class App extends Component {
     },
     {
       "aika": new Date(2017, 3, 24),
-      "nimi": "Typerien pelien ilta by TK ja Pelikerho",
-      "kuvaus": "Ongelmanratkaisu ja autismointi ovat avaimet jokaisen sodan voittamiseen. Ainakin teekkareiden piireissä. TeekkariKomissio ja Pelikerho järjestävät lautapeli-illan, jotta darraiset aivonystyrät pistetään töihin ja taistelutoverista haetaan murskavoittoa ja nöyryytystä. Sijaintina B",
+      "nimi": "Typerien pelien ilta (by TK ja Pelikerho) ja Jäynägaala (by TK)",
+      "kuvaus": "Ongelmanratkaisu ja autismointi ovat avaimet jokaisen sodan voittamiseen. Ainakin teekkareiden piireissä. TeekkariKomissio ja Pelikerho järjestävät lautapeli-illan, jotta darraiset aivonystyrät pistetään töihin ja taistelutoverista haetaan murskavoittoa ja nöyryytystä. Samaan aikaan, samassa paikassa järjestettävässä jäynägaalassa palkitaan alueellisten kisojen voittajat! Sijaintina B",
       "kartta": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126000.98873356925!2d22.08531956483999!3d60.43257830680526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x468c7584818edbbb%3A0x400b551554bc200!2sTurku!5e0!3m2!1sfi!2sfi!4v1488969451889"
     },
     {
@@ -122,13 +128,13 @@ class App extends Component {
       "kartta": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7871.797841846822!2d22.284369299999998!3d60.44604985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa9a4e10fd4201e45!2sCasino+Night+Club+Vegas!5e0!3m2!1sfi!2sfi!4v1488280295496"
     },
     {
-      "aika": new Date(2017, 3, 28),
+      "aika": new Date(2017, 3, 28, 17),
       "nimi": "Hyvinvointipäivä",
       "kuvaus": "Hyvinvointi on tärkeää urotekojen tiimellyksessä. Hyvinvointipäivä tulee tarpeeseen, jos wappua on viettänyt yhtään asiaankuuluvalla hartaudella.",
       "kartta": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d983.7177060870233!2d22.28632528924054!3d60.45453559619838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x468c76ef0388294d%3A0xb9f9af4cf75f4066!2sRehtorinpellonkatu+4%2C+20500+Turku!5e0!3m2!1sfi!2sfi!4v1488291549608"
     },
     {
-      "aika": new Date(2017, 3, 29),
+      "aika": new Date(2017, 3, 29, 12),
       "nimi": "Eldprovet",
       "kuvaus": "Se tulikoe-jonka-nimeä-kukaan-ei-mainitse. Fuksien pahin painajainen, rastikierros vailla vertaa. Erotellaan akat jyvistä ja fuksit pilteistä.",
       "kartta": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d983.6036189800728!2d22.283075658422867!3d60.458301995517004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNjDCsDI3JzI5LjkiTiAyMsKwMTcnMDMuMCJF!5e0!3m2!1sfi!2sfi!4v1488969389780"
@@ -144,6 +150,12 @@ class App extends Component {
       "nimi": "TYYn vappupiknik",
       "kuvaus": "TYY järjestää perinteisen vappupiknikin Vartiovuorenmäellä, jossa on enemmän tai vähemmän tapahtumaa ja pahaa oloa. Tähän päättyy Wapun taika ja tätä seuraa vain kesä ja aurinko ja darra ja loputon rahavirta...",
       "kartta": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1967.806925231554!2d22.274800906323037!3d60.44840284777761!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x468c76e49b503197%3A0xf69309ed7fb864e4!2sTurun+Kes%C3%A4teatteri!5e0!3m2!1sfi!2sfi!4v1488291402090"
+    },
+    {
+      "aika": new Date(2017, 4, 2),
+      "nimi": "Hyi wittu päivä",
+      "kuvaus": "Nimensä veroinen, uskomattoman miellyttävä olotila. Wapun jälkimaininkeja pääsee parantelemaan saunan ja naposteltavan merkeissä. Jaettu paha olo on pienempi paha olo.",
+      "kartta": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126000.98873356925!2d22.08531956483999!3d60.43257830680526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x468c7584818edbbb%3A0x400b551554bc200!2sTurku!5e0!3m2!1sfi!2sfi!4v1488969451889"
     }];
     this.state = { vappuun: timetowappu, päivät: 0, tunnit: 0, minuutit: 0, sekuntit: 0, tapahtumat: tapahtumat, vitsi: "" };
   }
