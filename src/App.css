@@ -46,14 +46,15 @@
   line-height: 150%;
   margin-top: 20px;
   margin-bottom: 20px;
+  padding-right: 2em;
 }
 
 .tapahtumaaika {
   text-align: left;
-  margin-right: 10px;
-  width: 80px;
-  min-width: 80px;
-  max-width: 80px;
+  margin-right: 1em;
+  width: 40px;
+  min-width: 40px;
+  max-width: 40px;
   font-weight: bold;
   line-height: 150%;
   margin-top: 20px;
@@ -67,6 +68,14 @@
 
 .kartta {
   margin-top: 0px;
+}
+
+@media screen and (min-width: 400px) {
+  .tapahtumaaika {
+    width: 70px;
+    min-width: 70px;
+    max-width: 70px;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -89,7 +98,7 @@
 
 .jarjesto {
   border-radius: 10px;
-  padding: 3px 7px 3px 7px;
+  padding: 3px 3px 3px 3px;
 }
 
 .flex {
