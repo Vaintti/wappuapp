@@ -247,7 +247,6 @@ class App extends Component {
               <br></br>
               <a className="jarjesto pikkujarjesto" href="https://www.asteriski.fi/">Asteriski</a>
               <a className="jarjesto pikkujarjesto" href="http://teekkarikomissio.utu.fi/fi/index.html">Teekkarikomissio</a>
-              ja
               <a className="jarjesto pikkujarjesto" href="http://www.tio.fi/">TIO</a>
             </div>
           </div>
