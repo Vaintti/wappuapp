@@ -18,7 +18,15 @@
 }
 
 .padding20 {
-  padding: 20px;
+  padding: 2em;
+}
+
+.margintop1{
+  margin-top: 1em;
+}
+
+.nomargintop {
+  margin-top: 0;
 }
 
 .margin20 {
@@ -26,7 +34,10 @@
 }
 
 .paddingbottom20 {
-  padding-bottom: 20px;
+  padding-bottom: 2em;
+}
+.margin20bottom {
+  margin-bottom: 2em;
 }
 
 .tapahtuma {

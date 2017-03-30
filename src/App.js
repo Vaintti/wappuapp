@@ -3,6 +3,7 @@ import moment from 'moment';
 import Tapahtuma from './Tapahtuma.js';
 import axios from 'axios';
 import logo from './digleus.png';
+import ResponsiveEmbed from 'react-responsive-embed';
 import './App.css';
 
 class App extends Component {
@@ -225,7 +226,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className="row nomargin baselinealign">
+        <div className="row nomargin baselinealign margin20bottom">
           <div className="App-header card nomargin orange white-text">
             <div className="col s12 l1 m12 logo">
               <img src={logo} height="70px" alt="logo"></img>
@@ -253,13 +254,9 @@ class App extends Component {
         </div>
         <div className="row">
           <div className="padding20 col s12 m12 l8">
-            <div className="grey lighten-5 card flex-column">
-              <div className="video-container">
-                <iframe className="video-element" src="https://www.youtube.com/embed/7zKnVEAjeEQ" allowFullScreen></iframe>
-              </div>
-            </div>
+            <ResponsiveEmbed src='https://www.youtube.com/embed/7zKnVEAjeEQ' allowFullScreen />
 
-            <div className="grey lighten-5 card flex-column">
+            <div className="grey lighten-5 card flex-column margintop1">
               <div className="padding20 card orange lighten-1 white-text nomargin">
                 <h5>Seuraavat tapahtumat</h5>
               </div>
@@ -276,7 +273,7 @@ class App extends Component {
           </div>
 
           <div className="padding20 col s12 m12 l4">
-            <div className="grey lighten-5 card flex-column">
+            <div className="grey lighten-5 card flex-column nomargintop">
               <div className="padding20 card orange lighten-1 white-text nomargin">
                 <h5>Miten osallistun?</h5>
               </div>
@@ -310,7 +307,7 @@ class App extends Component {
               <div className="margin20">
                 <ul className="collection">
                   <li className="collection-item">
-                    <div className="fb-page" data-href="https://www.facebook.com/digitry" data-width="2000px" data-tabs="timeline" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/nucleusry" className="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/nucleusry">Nucleus ry</a></blockquote></div>
+                    <div className="fb-page" data-href="https://www.facebook.com/digitry" data-width="2000px" data-tabs="timeline" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/nucleusry" className="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/nucleusry">Digit ry</a></blockquote></div>
                   </li>
                 </ul>
                 <ul className="collection">
