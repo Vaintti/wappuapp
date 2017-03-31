@@ -68,6 +68,7 @@
 
 .kartta {
   margin-top: 0px;
+  width: 100%;
 }
 
 @media screen and (min-width: 370px) {
