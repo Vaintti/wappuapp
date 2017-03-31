@@ -10,7 +10,7 @@ class App extends Component {
   constructor(props) {
     super(props);
     var wappudate = new Date(2017, 4, 1);
-    var wapunalku = new Date(2017, 3, 11);
+    var wapunalku = new Date(2017, 2, 32, , 37);
     var now = new Date();
     now = new Date(Date.parse(now)+1000*60*60*2);
     var timetowappu;
@@ -158,31 +158,45 @@ class App extends Component {
       "kuvaus": "Nimensä veroinen, uskomattoman miellyttävä olotila. Wapun jälkimaininkeja pääsee parantelemaan saunan ja naposteltavan merkeissä. Jaettu paha olo on pienempi paha olo.",
       "kartta": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126000.98873356925!2d22.08531956483999!3d60.43257830680526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x468c7584818edbbb%3A0x400b551554bc200!2sTurku!5e0!3m2!1sfi!2sfi!4v1488969451889"
     }];
-    this.state = { vappuun: timetowappu, päivät: 0, tunnit: 0, minuutit: 0, sekuntit: 0, tapahtumat: tapahtumat, vitsi: "" };
+    this.state = { vappuun: timetowappu, päivät: 0, tunnit: 0, minuutit: 0, sekuntit: 0, tapahtumat: tapahtumat, vitsi: "", wappudate: wappudate };
   }
 
   tick() {
-    this.setState((prevState) => ({
-      vappuun: new Date(Date.parse(prevState.vappuun) - 1),
-      päivät: Math.floor(Date.parse(this.state.vappuun) / 1000 / 60 / 60 / 24)
-    }));
-    if (this.state.vappuun.getHours() < 10) {
-      this.setState({ tunnit: 0 + '' + this.state.vappuun.getHours() })
+    if(this.state.vappuun <= 0){
+      if(Date.parse(this.state.wappudate) > Date.parse(Date())){
+        this.setState((prevState) => ({
+          vappuun: new Date(Date.parse(this.state.wappudate) - Date.parse(Date()))
+        }))
+      }
+      else {
+        this.setState((prevState) => ({
+          vappuun: new Date(0,0,0,0,0,0,0)
+        }))
+      }
     }
-    else {
-      this.setState({ tunnit: this.state.vappuun.getHours() })
-    }
-    if (this.state.vappuun.getMinutes() < 10) {
-      this.setState({ minuutit: 0 + '' + this.state.vappuun.getMinutes() })
-    }
-    else {
-      this.setState({ minuutit: this.state.vappuun.getMinutes() })
-    }
-    if (this.state.vappuun.getSeconds() < 10) {
-      this.setState({ sekuntit: 0 + '' + this.state.vappuun.getSeconds() })
-    }
-    else {
-      this.setState({ sekuntit: this.state.vappuun.getSeconds() })
+    else{
+      this.setState((prevState) => ({
+        vappuun: new Date(Date.parse(prevState.vappuun) - 1),
+        päivät: Math.floor(Date.parse(this.state.vappuun) / 1000 / 60 / 60 / 24)
+      }));
+      if (this.state.vappuun.getHours() < 10) {
+        this.setState({ tunnit: 0 + '' + this.state.vappuun.getHours() })
+      }
+      else {
+        this.setState({ tunnit: this.state.vappuun.getHours() })
+      }
+      if (this.state.vappuun.getMinutes() < 10) {
+        this.setState({ minuutit: 0 + '' + this.state.vappuun.getMinutes() })
+      }
+      else {
+        this.setState({ minuutit: this.state.vappuun.getMinutes() })
+      }
+      if (this.state.vappuun.getSeconds() < 10) {
+        this.setState({ sekuntit: 0 + '' + this.state.vappuun.getSeconds() })
+      }
+      else {
+        this.setState({ sekuntit: this.state.vappuun.getSeconds() })
+      }
     }
   }
 
