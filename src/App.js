@@ -27,7 +27,7 @@ class App extends Component {
     },
     {
       "aika": new Date(2017, 3, 13, 18),
-      "nimi": "Tempositsit ja Bower Auer -Vegas",
+      "nimi": "Tempositsit ja Bower Auer -Osakuntasali",
       "kuvaus": "Hieman erilaiset sitsit. Kahlataan läpi tunnetuimpien sitsilaulujen snapspaussien huutojen saattelemina ja juomaa runsaasti nauttien. Ruokaa ei ole tarjolla, eikä sitä ehtisikään syömään.  Sitsien jälkeen suoritetaan massiivinen <a href='https://en.wikipedia.org/wiki/Power_hour'>Power Hour</a> -juomapeli suurella laumalla. HUOM! Varaathan omat juomat mukaan molempiin tapahtumiin!",
       "kartta": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d983.7177060870233!2d22.28632528924054!3d60.45453559619838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x468c76ef0388294d%3A0xb9f9af4cf75f4066!2sRehtorinpellonkatu+4%2C+20500+Turku!5e0!3m2!1sfi!2sfi!4v1488291549608"
     },
@@ -41,7 +41,7 @@ class App extends Component {
       "aika": new Date(2017, 3, 15, 18),
       "nimi": "Wappulehden ensimmäinen myyntipäivä ja MS-DOS -Digitin kiltahuone",
       "kuvaus": "Jotta fuksit lakkinsa ansaitsevat, on heidän tänä päivänä suoritettava uroteko. Uunituoretta, mahtavaa ja kaunista Pilde & Napander -lehteä fuksien myytäköön runsain määrin ja teekkareiden ilosanomaa kaikelle kansalle levittäköön auringon paisteessa Turun kaupungin kauppojen torilla. Launkalauantain kunniaksi haalarimerkkien ompelua kiltiksellä MS-DOSin johdolla.",
-      "kartta": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1967.6091914889867!2d22.264755316387884!3d60.45166698206556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x468c76fbd627499d%3A0xb27c64fc9bcea1b3!2sKauppatori%2C+20100+Turku!5e0!3m2!1sfi!2sfi!4v1488291758493"
+      "kartta": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d983.6888605783973!2d22.28458297517444!3d60.455487896762016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x468c76ee494bb9cd%3A0xfe28f1a322aebdb5!2sAgora!5e0!3m2!1sfi!2sfi!4v1488291489586"
     },
     {
       "aika": new Date(2017, 3, 16, 18),
@@ -53,7 +53,7 @@ class App extends Component {
       "aika": new Date(2017, 3, 17, 18),
       "nimi": "Sitsilauluworkshop -Osakuntasali",
       "kuvaus": "Teekkarikulttuuri on perinteitä täynnä ja tällä päivämäärällä palaammekin teekkariuden syntysijoille kuvainnollisesti. Saamme kuulla uskomattomia legendoja teekkareiden supervoimista, heidän ylivoimaisesta älykkyydestä sekä kauniista ulkomuodoistaan. Teekkariperinteisiin kuuluu tiiviisti sitsilaulut ja koska turkulaisia sitsilauluja ei ole koskaan liikaa, pääsemme kilpailemaan sitsilaulujen työstämisestä!",
-      "kartta": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d983.6888605783973!2d22.28458297517444!3d60.455487896762016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x468c76ee494bb9cd%3A0xfe28f1a322aebdb5!2sAgora!5e0!3m2!1sfi!2sfi!4v1488291489586"
+      "kartta": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d983.7177060870233!2d22.28632528924054!3d60.45453559619838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x468c76ef0388294d%3A0xb9f9af4cf75f4066!2sRehtorinpellonkatu+4%2C+20500+Turku!5e0!3m2!1sfi!2sfi!4v1488291549608"
     },
     {
       "aika": new Date(2017, 3, 18, 18),
@@ -101,7 +101,7 @@ class App extends Component {
       "aika": new Date(2017, 3, 25, 12),
       "nimi": "Kierrospäivä (Jallunkierros by 37) -Digitin kiltahuone",
       "kuvaus": "Kierrospäivänä kierrostellaan ympäri yliopiston monien ainejärjestöjen toimistoja. Verkot heitetään vesille (verkostoidutaan), kun tapaamme tällä mutaisella ja kylmällä tiellä niin humanisteja, kauppiaita, juristeja kuin luonnontieteilijöitäkin. Kierrospäivä jatkuu perinneseuran perinteisellä Jallunkierroksella!",
-      "kartta": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d983.7190267600276!2d22.286600058425698!3d60.45449199551662!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x468c76eefd5d209d%3A0x478e4e69f0bc0c00!2sRavintola+Proffan+Kellari!5e0!3m2!1sfi!2sfi!4v1488291599633"
+      "kartta": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d983.6888605783973!2d22.28458297517444!3d60.455487896762016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x468c76ee494bb9cd%3A0xfe28f1a322aebdb5!2sAgora!5e0!3m2!1sfi!2sfi!4v1488291489586"
     },
     {
       "aika": new Date(2017, 3, 26, 18),
@@ -113,7 +113,7 @@ class App extends Component {
       "aika": new Date(2017, 3, 27, 16),
       "nimi": "Grilli & Kyykkä -Edun kenttä",
       "kuvaus": "Juominen nälättää ja urheilu janottaa ja nämähän sopivat kuin nyrkki silmään. Educariumin hiekkakentällä otetaan mittaa kartuista ja makkaroista, kun wapputaisto kulminoituu aggressiiviseen kyykkäämiseen. Tankkauspisteellä sisäänsä voi halutessaan ahtaa muutaman kolikon korvausta vastaan makkaraa ja muita grillin antimia. Omat grillattavat ovat myös suositeltavia.",
-      "kartta": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7871.797841846822!2d22.284369299999998!3d60.44604985!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa9a4e10fd4201e45!2sCasino+Night+Club+Vegas!5e0!3m2!1sfi!2sfi!4v1488280295496"
+      "kartta": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d983.6004349546947!2d22.283179772095895!3d60.45840710889674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNjDCsDI3JzMwLjMiTiAyMsKwMTcnMDIuOCJF!5e0!3m2!1sfi!2sfi!4v1490983885370"
     },
     {
       "aika": new Date(2017, 3, 28, 17),
@@ -137,7 +137,7 @@ class App extends Component {
       "aika": new Date(2017, 4, 2, 14),
       "nimi": "Hyi vittu -päivä -TYYn sauna",
       "kuvaus": "Nimensä veroinen, uskomattoman miellyttävä olotila. Wapun jälkimaininkeja pääsee parantelemaan saunan ja naposteltavan merkeissä. Jaettu paha olo on pienempi paha olo.",
-      "kartta": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126000.98873356925!2d22.08531956483999!3d60.43257830680526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x468c7584818edbbb%3A0x400b551554bc200!2sTurku!5e0!3m2!1sfi!2sfi!4v1488969451889"
+      "kartta": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d983.7177060870233!2d22.28632528924054!3d60.45453559619838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x468c76ef0388294d%3A0xb9f9af4cf75f4066!2sRehtorinpellonkatu+4%2C+20500+Turku!5e0!3m2!1sfi!2sfi!4v1488291549608"
     }];
     this.state = { vappuun: timetowappu, päivät: 0, tunnit: 0, minuutit: 0, sekuntit: 0, tapahtumat: tapahtumat, vitsi: "", wapunalku: wapunalku };
   }
