@@ -72,17 +72,17 @@
 
 @media screen and (min-width: 370px) {
   .tapahtumaaika {
-    width: 70px;
-    min-width: 70px;
-    max-width: 70px;
+    width: 65px;
+    min-width: 65px;
+    max-width: 65px;
   }
 }
 
 @media screen and (min-width: 992px) {
   .tapahtumaaika {
-    width: 160px;
-    min-width: 160px;
-    max-width: 160px;
+    width: 170px;
+    min-width: 170px;
+    max-width: 170px;
   }
 }
 
@@ -110,12 +110,12 @@
   flex-direction: column;
 }
 
-a {
+a.jarjesto {
   color: white;
   font-size: 1.8em;
 }
 
-a:hover {
+a:hover.jarjesto {
   color: grey;
 }
 
@@ -136,7 +136,7 @@ a:hover {
   width: 100%;
 }
 
-.pikkujarjesto {
+a.pikkujarjesto {
   font-size: 1.2em;
 }
 
