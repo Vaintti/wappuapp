@@ -32,6 +32,15 @@ module.exports = {
         },
         {
             'text': 'Miten muutat tiskikoneen lumilingoksi? Anna vaimolle lapio.'
+        },
+        {
+            'text': 'Mitä eroa on norsulla ja jäniksellä? Molemmat alkavat j:llä jos norsun nimi on Jussi'
+        },
+        {
+            'text': 'Mikä ero on anopilla ja sikarilla? Sikarissa ensimmäiset henkäykset ovat parhaat, anopissa viimeiset.'
+        },
+        {
+            'text': 'Kaksi kakkaa istui hiekkalaatikolla ja ripuli tuli paikalle. Ripuli kysyi: "saanko tulla mukaan leikkiin?" Johon kakat vastasivat: "Et, tää on vain koville jätkille!"'
         }];
         callback(vitsit);
     }
