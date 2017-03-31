@@ -9,17 +9,9 @@ import './App.css';
 class App extends Component {
   constructor(props) {
     super(props);
-    var wappudate = new Date(2017, 4, 1);
-    var wapunalku = new Date(2017, 3, 11);
+    var wapunalku = new Date(2017, 3, 12);
     var now = new Date();
-    now = new Date(Date.parse(now)+1000*60*60*2);
-    var timetowappu;
-    if(Date.parse(wapunalku) > Date.parse(new Date())){
-      timetowappu = new Date(Date.parse(wapunalku) - Date.parse(now));
-    }
-    else {
-      timetowappu = new Date(Date.parse(wappudate) - Date.parse(now));
-    }
+    var timetowappu = new Date(Date.parse(wapunalku) - Date.parse(now));
     var tapahtumat = [{
       "aika": new Date(2017, 3, 10),
       "nimi": "Wapunwarastusristeily",
@@ -158,57 +150,41 @@ class App extends Component {
       "kuvaus": "Nimensä veroinen, uskomattoman miellyttävä olotila. Wapun jälkimaininkeja pääsee parantelemaan saunan ja naposteltavan merkeissä. Jaettu paha olo on pienempi paha olo.",
       "kartta": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126000.98873356925!2d22.08531956483999!3d60.43257830680526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x468c7584818edbbb%3A0x400b551554bc200!2sTurku!5e0!3m2!1sfi!2sfi!4v1488969451889"
     }];
-    this.state = { vappuun: timetowappu, päivät: 0, tunnit: 0, minuutit: 0, sekuntit: 0, tapahtumat: tapahtumat, vitsi: "" };
+    this.state = { vappuun: timetowappu, päivät: 0, tunnit: 0, minuutit: 0, sekuntit: 0, tapahtumat: tapahtumat, vitsi: "", wapunalku: wapunalku };
   }
 
   tick() {
-    this.setState((prevState) => ({
-      vappuun: new Date(Date.parse(prevState.vappuun) - 1),
-      päivät: Math.floor(Date.parse(this.state.vappuun) / 1000 / 60 / 60 / 24)
-    }));
-    if (this.state.vappuun.getHours() < 10) {
-      this.setState({ tunnit: 0 + '' + this.state.vappuun.getHours() })
+    var now = new Date();
+    var days = Math.floor(Date.parse(this.state.vappuun) / (1000 * 60 * 60 * 24))+'';
+    if(days.length<2){days = 0+days}
+    var hours = Math.floor((Date.parse(this.state.vappuun) % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))+'';
+    if(hours.length<2){hours = 0+hours}
+    var minutes = Math.floor((Date.parse(this.state.vappuun) % (1000 * 60 * 60)) / (1000 * 60))+'';
+    if(minutes.length<2){minutes = 0+minutes}
+    var seconds = Math.floor((Date.parse(this.state.vappuun) % (1000 * 60)) / 1000)+'';
+    if(seconds.length<2){seconds = 0+seconds}
+
+    if(Date.parse(this.state.wapunalku) >= Date.parse(new Date())) {
+      this.setState({
+        vappuun: new Date(Date.parse(this.state.wapunalku) - Date.parse(now)),
+        vappustring: days+':'+hours+':'+minutes+':'+seconds
+        
+      })
     }
-    else {
-      this.setState({ tunnit: this.state.vappuun.getHours() })
-    }
-    if (this.state.vappuun.getMinutes() < 10) {
-      this.setState({ minuutit: 0 + '' + this.state.vappuun.getMinutes() })
-    }
-    else {
-      this.setState({ minuutit: this.state.vappuun.getMinutes() })
-    }
-    if (this.state.vappuun.getSeconds() < 10) {
-      this.setState({ sekuntit: 0 + '' + this.state.vappuun.getSeconds() })
-    }
-    else {
-      this.setState({ sekuntit: this.state.vappuun.getSeconds() })
+    else{
+      this.setState({
+        vappustring: 'Wabu ei lobu!!!'
+      })
     }
   }
 
   componentDidMount() {
     this.interval = setInterval(() => this.tick(), 1000);
+    
     this.setState({
-      päivät: Math.floor(Date.parse(this.state.vappuun) / 1000 / 60 / 60 / 24),
+      vappustring: "Wabu???"
     })
-    if (this.state.vappuun.getHours() < 10) {
-      this.setState({ tunnit: 0 + '' + this.state.vappuun.getHours() })
-    }
-    else {
-      this.setState({ tunnit: this.state.vappuun.getHours() })
-    }
-    if (this.state.vappuun.getMinutes() < 10) {
-      this.setState({ minuutit: 0 + '' + this.state.vappuun.getMinutes() })
-    }
-    else {
-      this.setState({ minuutit: this.state.vappuun.getMinutes() })
-    }
-    if (this.state.vappuun.getSeconds() < 10) {
-      this.setState({ sekuntit: 0 + '' + this.state.vappuun.getSeconds() })
-    }
-    else {
-      this.setState({ sekuntit: this.state.vappuun.getSeconds() })
-    }
+
     axios.get('/vitsit/getVitsi')
     .then(function(result) {
       console.log(result);
@@ -236,18 +212,20 @@ class App extends Component {
             </div>
             <div className="col s12 l4 m12">
               <h5>
-                {this.state.päivät}:{this.state.tunnit}:{this.state.minuutit}:{this.state.sekuntit}
+                {this.state.vappustring}
+                
               </h5>
             </div>
             <div className="col s12 l4 m12">
               <a className="jarjesto" href="http://digit.fi/">Digit</a>
+              &
               <a className="jarjesto" href="http://nucleus.fi/">Nucleus</a>
               <br></br>
               Mukana menossa myös
               <br></br>
-              <a className="jarjesto pikkujarjesto" href="https://www.asteriski.fi/">Asteriski</a>
               <a className="jarjesto pikkujarjesto" href="http://teekkarikomissio.utu.fi/fi/index.html">Teekkarikomissio</a>
-              <a className="jarjesto pikkujarjesto" href="http://www.tio.fi/">TIO</a>
+              ja
+              <a className="jarjesto pikkujarjesto" href="https://www.asteriski.fi/">Asteriski</a>
             </div>
           </div>
         </div>
@@ -278,10 +256,11 @@ class App extends Component {
               </div>
               <div className="margin20">
                 <ul className="collection nomargin">
-                  <li className="collection-item">Osta ebin passi</li>
-                  <li className="collection-item">Kerää passiin leimoja käymällä tapahtumissa ja näyttämällä passia keltalakkisille hepuille</li>
-                  <li className="collection-item">Palauta passi keltalakkisille hepuille ja vastaanota n määrä hienoja wappuputkihaalarimerkkejä</li>
-                  <li className="collection-item">Profit???</li>
+                  <li className="collection-item">Osta wappupassi wappukomissaarilta (ne on niitä silinteripäisiä tyyppejä) wapputapahtumista tai Digitin/Nucleuksen kiltahuoneelta.</li>
+                  <li className="collection-item">Käy wapputapahtumissa ja pyydä passiisi leimoja wappukomissaareilta. </li>
+                  <li className="collection-item">Palauta passi wappukomissaarille wappupiknikillä, haista vittu -päivänä tai niiden jälkeen Digitin tai Nucleuksen hallituslaisille kiltahuoneella.</li>
+                  <li className="collection-item">???</li>
+                  <li className="collection-item">Profit.</li>
                 </ul>
               </div>
             </div>
