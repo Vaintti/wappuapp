@@ -75,7 +75,7 @@ class App extends Component {
     },
     {
       "aika": new Date(2017, 3, 21, 12),
-      "nimi": "Bar Wappu Line - Yliopistonmäki ja Teekkarin neliottelu (by TK) - B",
+      "nimi": "Bar Wappu Line - Yliopistonmäki ja Teekkarin neliottelu (by TK) - Kemian kukkulat",
       "kuvaus": "Jos wapunwarastus jäi tänä vuonna ja merivesihammasta (?) kolottaa, voi risteilemään lähteä myös Yliopistonmäelle! Mäen päällä olevassa suihkulähteessä seilataan halvan viinan perässä ympäri ämpäri lahtea. ",
       "kartta": "https://maps.googleapis.com/maps/api/staticmap?center=60.454672,+22.284435&zoom=17&scale=false&size=600x600&maptype=roadmap&key=AIzaSyCWrM7xzlmZHgQro8cGpxJp-VM__2oNpME&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7C60.454672,+22.284435"
     },
