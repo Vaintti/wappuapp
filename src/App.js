@@ -9,7 +9,7 @@ import './App.css';
 class App extends Component {
   constructor(props) {
     super(props);
-    var wapunalku = new Date(2017, 3, 13);
+    var wapunalku = new Date(2017, 3, 11, 18);
     var now = new Date();
     var timetowappu = new Date(Date.parse(wapunalku) - Date.parse(now));
     var tapahtumat = [
@@ -265,6 +265,13 @@ class App extends Component {
                   </li>
                 </ul>
               </div>
+            </div>
+
+            <div className="grey lighten-5 card flex-column">
+              <div className="padding20 card orange lighten-1 white-text nomargin">
+                <h5>Wapun virallinen soittolista</h5>
+              </div>
+              <iframe className="playlist" src="https://embed.spotify.com/?uri=spotify%3Auser%3Adalimited%3Aplaylist%3A2WB71URH6WuV4q2Zad60TU" height="380"></iframe>
             </div>
 
             <div className="grey lighten-5 card flex-column">
