@@ -3,6 +3,7 @@ import moment from 'moment';
 import Tapahtuma from './Tapahtuma.js';
 import axios from 'axios';
 import logo from './digleus.png';
+import wappuradio from './wappuradio.svg'
 import ResponsiveEmbed from 'react-responsive-embed';
 import './App.css';
 
@@ -272,6 +273,18 @@ class App extends Component {
                 <h5>Wapun virallinen soittolista</h5>
               </div>
               <iframe className="playlist" src="https://embed.spotify.com/?uri=spotify%3Auser%3Adalimited%3Aplaylist%3A2WB71URH6WuV4q2Zad60TU" height="380"></iframe>
+            </div>
+
+            <div className="grey lighten-5 card flex-column">
+              <div className="padding20 card orange lighten-1 white-text nomargin">
+                <a href="https://wappuradio.fi/"><img src={wappuradio} width="135" height="90"></img></a>
+              </div>
+              <audio controls crossOrigin className="playlist">
+                <source src="//mordor.wappuradio.fi/wappuradio.mp3" type="audio/mpeg"></source>
+              </audio>
+              <div className="margin20">
+                <a href="https://wappuradio.fi/">https://wappuradio.fi/</a>
+              </div>
             </div>
 
             <div className="grey lighten-5 card flex-column">
