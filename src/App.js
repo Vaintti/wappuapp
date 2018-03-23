@@ -22,9 +22,9 @@ class App extends Component {
     },
     {
       "aika": new Date(2018, 3, 19, 12),
-      "nimi": "Wappulehden wirallinen myyntipäiwä - Kauppatori",
-      "kuvaus": "Teekkarihuumori on tekniikan opiskelijoiden lahja Suomen kansalle. Tänään tätä lahjaa jaellaan avokätisesti käteistä vastaan Turun toreilla. Torilla tavataan! Huom! Jotta fuksit lakkinsa ansaitsevat, on heidän tänä päivänä suoritettava uroteko. Uunituoretta, mahtavaa ja kaunista Pilde & Napander -lehteä fuksien myytäköön runsain määrin ja teekkareiden ilosanomaa kaikelle kansalle levittäköön auringon paisteessa.",
-      "kartta": "https://maps.googleapis.com/maps/api/staticmap?center=vegas+turku&zoom=17&scale=false&size=600x600&maptype=roadmap&key=AIzaSyCWrM7xzlmZHgQro8cGpxJp-VM__2oNpME&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7Cvegas+turku"
+      "nimi": "Wappulehden wirallinen myyntipäiwä - Digitin kiltahuone",
+      "kuvaus": "Teekkarihuumori on tekniikan opiskelijoiden lahja Suomen kansalle. Tänään tätä lahjaa jaellaan avokätisesti käteistä vastaan Turun toreilla. Torilla tavataan! Huom! Jotta fuksit lakkinsa ansaitsevat, on heidän tänä päivänä suoritettava uroteko. Uunituoretta, mahtavaa ja kaunista Pilde & Napander -lehteä fuksien myytäköön runsain määrin ja teekkareiden ilosanomaa kaikelle kansalle levittäköön auringon paisteessa. Yhteislähtö Turun toreille Digitin kiltahuoneelta.",
+      "kartta": "https://maps.googleapis.com/maps/api/staticmap?center=60.455659,+22.285654&zoom=17&scale=false&size=600x600&maptype=roadmap&key=AIzaSyCWrM7xzlmZHgQro8cGpxJp-VM__2oNpME&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7C60.455659,+22.285654"
     },
     {
       "aika": new Date(2018, 3, 19, 17),
@@ -36,13 +36,13 @@ class App extends Component {
       "aika": new Date(2018, 3, 20, 17),
       "nimi": "Sitsilauluworkshop ja Sima-pong - Q-talo",
       "kuvaus": "Teekkariperinteisiin kuuluu tiiviisti sitsilaulut ja koska turkulaisia sitsilauluja ei ole koskaan liikaa, pääsemme kilpailemaan sitsilaulujen työstämisestä!",
-      "kartta": "https://maps.googleapis.com/maps/api/staticmap?center=60.454787,+22.287281&zoom=17&scale=false&size=600x600&maptype=roadmap&key=AIzaSyCWrM7xzlmZHgQro8cGpxJp-VM__2oNpME&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7C60.454787,+22.287281"
+      "kartta": "https://maps.googleapis.com/maps/api/staticmap?center=Q-talo&zoom=17&scale=false&size=600x600&maptype=roadmap&key=AIzaSyCWrM7xzlmZHgQro8cGpxJp-VM__2oNpME&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7CQ-talo"
     },
     {
       "aika": new Date(2018, 3, 21, 9),
       "nimi": "Aamusitsit ja Bahamabileet - Q-talo",
       "kuvaus": "Tule sellaisena kuin heräät! Aamu alkaa akateemisella pöytäjuhlalla, joka on nostattava Wappumielen uudelleen jo aamuwarhain. Juhlamieli säilykööt läpi päivän, sillä noin klo 16, heti sitsien päätyttyä, päästään suoraan jatkamaan Bahamabileisiin samoissa tiloissa. Huikeeta!",
-      "kartta": "https://maps.googleapis.com/maps/api/staticmap?center=60.455659,+22.285654&zoom=17&scale=false&size=600x600&maptype=roadmap&key=AIzaSyCWrM7xzlmZHgQro8cGpxJp-VM__2oNpME&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7C60.455659,+22.285654"
+      "kartta": "https://maps.googleapis.com/maps/api/staticmap?center=Q-talo&zoom=17&scale=false&size=600x600&maptype=roadmap&key=AIzaSyCWrM7xzlmZHgQro8cGpxJp-VM__2oNpME&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7CQ-talo"
     },
     {
       "aika": new Date(2018, 3, 22, 14),
@@ -52,15 +52,21 @@ class App extends Component {
     },
     {
       "aika": new Date(2018, 3, 23, 19),
-      "nimi": "Kerhopäiwä: Viini ja jyystö, Typerien juomien kerho ja Typerien pelien ilta - Q-talo",
-      "kuvaus": "<p>Viini ja jyystöilta: Teekkarit ovat hienoa ja arvokasta väkeä, ja nauttivat viinastaan myös punaisena tai valkoisena. Joskus jopa kuohuvana tai roséna. Tämän alkomaholipitoisen herkun taistelutoverina wapputaistossa  auttaa oivasti keltainen ystävänsä jyystö, jota mukavien (nice = mukava) kerholaisten johdolla pääsemme tässä koettelemuksessa maistelemaan.</p> <p>Typerien juomien kerho: Jos viini ei maistu, eikä ainainen bissen lipitys tai siiderin sirkutus pääsisi kyllästyttämään, kokeillaan Typerien juomien illassa jotain uutta! Järjestäjätahot järjestävät järjestyspaikalle järjestyksessä erilaisia järjeltään typeriä juomia, joita sitten järjelliset jäsenistön jäsenet pääsevät maistelemaan. Tapahtuma on myös OPM, joten oma typerä juoma kannattaa ottaa mukaan.</p> <p>Typerien pelien ilta: Typerät tyypit tyyppaavat typeriä pelejä tyypillisen tyrmäävään tahtiin.",
-      "kartta": "https://maps.googleapis.com/maps/api/staticmap?center=60.455659,+22.285654&zoom=17&scale=false&size=600x600&maptype=roadmap&key=AIzaSyCWrM7xzlmZHgQro8cGpxJp-VM__2oNpME&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7C60.455659,+22.285654"
+      "nimi": "Kerhopäivä: Viini ja jyystö, Typerien juomien kerho ja Typerien pelien ilta - Q-talo",
+      "kuvaus": "<p>Viini- ja jyystöilta: Teekkarit ovat hienoa ja arvokasta väkeä, ja nauttivat viinastaan myös punaisena tai valkoisena. Joskus jopa kuohuvana tai roséna. Tämän alkomaholipitoisen herkun taistelutoverina wapputaistossa  auttaa oivasti keltainen ystävänsä jyystö, jota mukavien (nice = mukava) kerholaisten johdolla pääsemme tässä koettelemuksessa maistelemaan.</p> <p>Typerien juomien kerho: Jos viini ei maistu, ja jottei ainainen bissen lipitys tai siiderin sirkutus pääsisi kyllästyttämään, kokeillaan Typerien juomien illassa jotain uutta! Järjestäjätahot järjestävät järjestyspaikalle järjestyksessä erilaisia järjeltään typeriä juomia, joita sitten järjelliset jäsenistön jäsenet pääsevät maistelemaan. Tapahtuma on myös OPM, joten oma typerä juoma kannattaa ottaa mukaan.</p> <p>Typerien pelien ilta: Typerät tyypit tyyppaavat typeriä pelejä tyypillisen tyrmäävään tahtiin.",
+      "kartta": "https://maps.googleapis.com/maps/api/staticmap?center=Q-talo&zoom=17&scale=false&size=600x600&maptype=roadmap&key=AIzaSyCWrM7xzlmZHgQro8cGpxJp-VM__2oNpME&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7CQ-talo"
     },
     {
       "aika": new Date(2018, 3, 24, 12),
       "nimi": "Kierrospäivä - Digitin kiltahuone",
       "kuvaus": "Kierrospäivänä kierrostellaan ympäri yliopiston monien ainejärjestöjen toimistoja. Verkot heitetään vesille (verkostoidutaan), kun tapaamme tällä mutaisella ja kylmällä tiellä niin humanisteja, kauppiaita, juristeja kuin luonnontieteilijöitäkin. Kierrospäivä jatkuu perinneseuran perinteisellä Jallunkierroksella!",
-      "kartta": "https://maps.googleapis.com/maps/api/staticmap?center=60.454787,+22.287281&zoom=17&scale=false&size=600x600&maptype=roadmap&key=AIzaSyCWrM7xzlmZHgQro8cGpxJp-VM__2oNpME&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7C60.454787,+22.287281"
+      "kartta": "https://maps.googleapis.com/maps/api/staticmap?center=60.455659,+22.285654&zoom=17&scale=false&size=600x600&maptype=roadmap&key=AIzaSyCWrM7xzlmZHgQro8cGpxJp-VM__2oNpME&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7C60.455659,+22.285654"
+    },
+    {
+      "aika": new Date(2018, 3, 24, 16),
+      "nimi": "Jallunkierros by 37 - Proffan kellari",
+      "kuvaus": "Kevät, Wappu ja Jallunkierros! On jälleen aika kiertää paikallisia baareja Jallun, tuon juomakunnan jalon peuran, kunniaksi! Jallunkierros 2018 on Kolmeseiska ry:n järjestämä, jo perinnebakkanaalien ovea kolkutteleva, baarikierros.",
+      "kartta": "https://maps.googleapis.com/maps/api/staticmap?center=Proffan+Kellari&zoom=17&scale=false&size=600x600&maptype=roadmap&key=AIzaSyCWrM7xzlmZHgQro8cGpxJp-VM__2oNpME&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7CProffan+Kellari"
     },
     {
       "aika": new Date(2018, 3, 25, 18),
@@ -78,7 +84,7 @@ class App extends Component {
       "aika": new Date(2017, 3, 27, 16, 30),
       "nimi": "Tempositsit ja Teekkarikomission tapahtuma - Q-talo",
       "kuvaus": "Hieman erilaiset sitsit. Kahlataan läpi tunnetuimpien sitsilaulujen snapspaussien huutojen saattelemina ja juomaa runsaasti nauttien. Ruokaa ei ole tarjolla, eikä sitä ehtisikään syömään. Tempositsien jälkeen pääsee halutessaan tempomaan lisää juotavaa, kun Teekkarikomissio esittelee Turun teekkaripelit Kadonneen tutkinnon metsästyksen (KTM) ja Fia-cupin. Tule ainakin kannustamaan oma suosikkisi voittoon!",
-      "kartta": "https://maps.googleapis.com/maps/api/staticmap?center=60.454787,+22.287281&zoom=17&scale=false&size=600x600&maptype=roadmap&key=AIzaSyCWrM7xzlmZHgQro8cGpxJp-VM__2oNpME&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7C60.454787,+22.287281"
+      "kartta": "https://maps.googleapis.com/maps/api/staticmap?center=Q-talo&zoom=17&scale=false&size=600x600&maptype=roadmap&key=AIzaSyCWrM7xzlmZHgQro8cGpxJp-VM__2oNpME&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7CQ-talo"
     },
     {
       "aika": new Date(2017, 3, 28, 16),
@@ -89,8 +95,8 @@ class App extends Component {
     {
       "aika": new Date(2017, 3, 29, 12),
       "nimi": "Eldprowet - Axelia",
-      "kuvaus": "Tulikoe on suoritettava jokaisen fuksin, joka teekkarilakin halajaa päähän Wapppuna painaa. Perinteisesti Eldprowetissa ********** **********ssa kun joukkueet ********** ja ********** kunnes ********** rankasti. Kilpailun jokaista teekkarikokelasta ********** ********** ainakin kolmesti ja ********** ********** märkää. ********** ********** ********** räntäsade. ********** ********** kilpailun voittajalle **********, muille **********. Luvassa ehdottomasti fuksivuoden muistiinpainumattomin päivä, jonka päätteeksi ********** ********** **********.",
-      "kartta": "https://maps.googleapis.com/maps/api/staticmap?center=60.455659,+22.285654&zoom=17&scale=false&size=600x600&maptype=roadmap&key=AIzaSyCWrM7xzlmZHgQro8cGpxJp-VM__2oNpME&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7C60.455659,+22.285654"
+      "kuvaus": "Huom! Tapahtuma on vain teekkarifukseille. Tulikoe on suoritettava jokaisen fuksin, joka teekkarilakin halajaa päähän Wapppuna painaa. Perinteisesti Eldprowetissa ********** **********ssa kun joukkueet ********** ja ********** kunnes ********** rankasti. Kilpailun jokaista teekkarikokelasta ********** ********** ainakin kolmesti ja ********** ********** märkää. ********** ********** ********** räntäsade. ********** ********** kilpailun voittajalle **********, muille **********. Luvassa ehdottomasti fuksivuoden muistiinpainumattomin päivä, jonka päätteeksi ********** ********** **********.",
+      "kartta": "https://maps.googleapis.com/maps/api/staticmap?center=60.455108,+22.281236&zoom=17&scale=false&size=600x600&maptype=roadmap&key=AIzaSyCWrM7xzlmZHgQro8cGpxJp-VM__2oNpME&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7C60.455108,+22.281236"
     },
     {
       "aika": new Date(2017, 3, 30, 14),
@@ -102,7 +108,7 @@ class App extends Component {
       "aika": new Date(2017, 4, 1, 0),
       "nimi": "Ikuisen teekkarin hauta - Yliopistonmäki",
       "kuvaus": "Wappuyönä kokoonnumme muistelemaan ikuista teekkaria ja nostamme oluttynnörin hänen haudalleen.",
-      "kartta": "https://maps.googleapis.com/maps/api/staticmap?center=60.454672,+22.284435&zoom=17&scale=false&size=600x600&maptype=roadmap&key=AIzaSyCWrM7xzlmZHgQro8cGpxJp-VM__2oNpME&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7C60.454672,+22.284435"
+      "kartta": "https://maps.googleapis.com/maps/api/staticmap?center=60.456071,+22.285517&zoom=17&scale=false&size=600x600&maptype=roadmap&key=AIzaSyCWrM7xzlmZHgQro8cGpxJp-VM__2oNpME&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7C60.456071,+22.285517"
     },
     {
       "aika": new Date(2017, 4, 1, 12),
@@ -191,9 +197,7 @@ class App extends Component {
         </div>
         <div className="row">
           <div className="padding20 col s12 m12 l8">
-            <ResponsiveEmbed src='https://www.youtube.com/embed/qt9vJZXvjVw' allowFullScreen />
-
-            <div className="grey lighten-5 card flex-column margintop1">
+            <div className="grey lighten-5 card flex-column nomargintop">
               <div className="padding20 card orange lighten-1 white-text nomargin">
                 <h5>Seuraavat tapahtumat</h5>
               </div>
@@ -207,6 +211,7 @@ class App extends Component {
 
               </ul>
             </div>
+            <ResponsiveEmbed src='https://www.youtube.com/embed/Ix-Chmm3HGE' allowFullScreen />
           </div>
 
           <div className="padding20 col s12 m12 l4">
