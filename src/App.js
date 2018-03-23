@@ -17,7 +17,7 @@ class App extends Component {
     {
       "aika": new Date(2018, 3, 18, 20),
       "nimi": "Wappulehden julkkari ja Wapunaloitusbileet - Vegas",
-      "kuvaus": "Kevään varmin merkki, Wappulehti Pilde&Napander, on taas täällä viihdyttämässä kansaa! Tuo Turun teekkareiden kaunis kätten jälki, Pilde & Napander, julkaistaan ja ilotulitukset välkkyvät ja rummut soittavat ja kuohuviini virtaa ja kaikilla on hauskaa. Silmät kirkkaina ja mieli raukeana päästään avaamaan vuoden 2017 P&N ja nauramaan aina yhtä innostavalle ja suvaitsevalle teekkarihuumorille. #vitsihuumoria Virallisesti Wapun starttaa Wapunaloitusbileet ja Wappurauhan julistus.",
+      "kuvaus": "Kevään varmin merkki, Wappulehti Pilde&Napander, on taas täällä viihdyttämässä kansaa! Tuo Turun teekkareiden kaunis kätten jälki, Pilde & Napander, julkaistaan ja ilotulitukset välkkyvät ja rummut soittavat ja kuohuviini virtaa ja kaikilla on hauskaa. Silmät kirkkaina ja mieli raukeana päästään avaamaan vuoden 2018 P&N ja nauramaan aina yhtä innostavalle ja suvaitsevalle teekkarihuumorille. #vitsihuumoria Virallisesti Wapun starttaa Wapunaloitusbileet ja Wappurauhan julistus.",
       "kartta": "https://maps.googleapis.com/maps/api/staticmap?center=vegas+turku&zoom=17&scale=false&size=600x600&maptype=roadmap&key=AIzaSyCWrM7xzlmZHgQro8cGpxJp-VM__2oNpME&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7Cvegas+turku"
     },
     {
@@ -81,43 +81,43 @@ class App extends Component {
       "kartta": "https://maps.googleapis.com/maps/api/staticmap?center=60.458263,+22.284175&zoom=17&scale=false&size=600x600&maptype=roadmap&key=AIzaSyCWrM7xzlmZHgQro8cGpxJp-VM__2oNpME&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7C60.458263,+22.284175"
     },
     {
-      "aika": new Date(2017, 3, 27, 16, 30),
+      "aika": new Date(2018, 3, 27, 16, 30),
       "nimi": "Tempositsit ja Teekkarikomission tapahtuma - Q-talo",
       "kuvaus": "Hieman erilaiset sitsit. Kahlataan läpi tunnetuimpien sitsilaulujen snapspaussien huutojen saattelemina ja juomaa runsaasti nauttien. Ruokaa ei ole tarjolla, eikä sitä ehtisikään syömään. Tempositsien jälkeen pääsee halutessaan tempomaan lisää juotavaa, kun Teekkarikomissio esittelee Turun teekkaripelit Kadonneen tutkinnon metsästyksen (KTM) ja Fia-cupin. Tule ainakin kannustamaan oma suosikkisi voittoon!",
       "kartta": "https://maps.googleapis.com/maps/api/staticmap?center=Q-talo&zoom=17&scale=false&size=600x600&maptype=roadmap&key=AIzaSyCWrM7xzlmZHgQro8cGpxJp-VM__2oNpME&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7CQ-talo"
     },
     {
-      "aika": new Date(2017, 3, 28, 16),
+      "aika": new Date(2018, 3, 28, 16),
       "nimi": "Hyvinvointipäivä - TYYn sauna",
       "kuvaus": "Hyvinvointi on tärkeää urotekojen tiimellyksessä. Hyvinvointipäivä tulee tarpeeseen, jos wappua on viettänyt yhtään asiaankuuluvalla hartaudella leffan, saunan ja rennon hengailun merkeissä.  Viimeinen hetki keräillä voimia teekkariwapun kovimpiin koitoksiin!",
       "kartta": "https://maps.googleapis.com/maps/api/staticmap?center=60.454567,+22.287194&zoom=17&scale=false&size=600x600&maptype=roadmap&key=AIzaSyCWrM7xzlmZHgQro8cGpxJp-VM__2oNpME&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7C60.454567,+22.287194"
     },
     {
-      "aika": new Date(2017, 3, 29, 12),
+      "aika": new Date(2018, 3, 29, 12),
       "nimi": "Eldprowet - Axelia",
       "kuvaus": "Huom! Tapahtuma on vain teekkarifukseille. Tulikoe on suoritettava jokaisen fuksin, joka teekkarilakin halajaa päähän Wapppuna painaa. Perinteisesti Eldprowetissa ********** **********ssa kun joukkueet ********** ja ********** kunnes ********** rankasti. Kilpailun jokaista teekkarikokelasta ********** ********** ainakin kolmesti ja ********** ********** märkää. ********** ********** ********** räntäsade. ********** ********** kilpailun voittajalle **********, muille **********. Luvassa ehdottomasti fuksivuoden muistiinpainumattomin päivä, jonka päätteeksi ********** ********** **********.",
       "kartta": "https://maps.googleapis.com/maps/api/staticmap?center=60.455108,+22.281236&zoom=17&scale=false&size=600x600&maptype=roadmap&key=AIzaSyCWrM7xzlmZHgQro8cGpxJp-VM__2oNpME&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7C60.455108,+22.281236"
     },
     {
-      "aika": new Date(2017, 3, 30, 14),
+      "aika": new Date(2018, 3, 30, 14),
       "nimi": "Wappuaatto ja lakitus - Yliopistonmäki",
       "kuvaus": "Wappuaaton auringonnousu kruunaa koko kolmeviikkoisen juhlan. Tämä tietää rohkeille ja vahvoille fukseille ilon ja onnen päivää, kun kaiken sen darran päälle päähänsä saa painaa ikioman, vielä valkoisen teekkarilakin. Tilaisuudessa siirrytään myös taidemuseonmäelle seuraamaan vähempiarvoisten kuolevaisten, ylioppilaiden, tavallisten ylioppilaslakkien päähän laittamista.",
       "kartta": "https://maps.googleapis.com/maps/api/staticmap?center=60.454672,+22.284435&zoom=17&scale=false&size=600x600&maptype=roadmap&key=AIzaSyCWrM7xzlmZHgQro8cGpxJp-VM__2oNpME&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7C60.454672,+22.284435"
     },
     {
-      "aika": new Date(2017, 3, 30, 18,30),
+      "aika": new Date(2018, 3, 30, 18,30),
       "nimi": "Paavo Nurmen patsaan lakitus",
       "kuvaus": "TBA",
       "kartta": "https://maps.googleapis.com/maps/api/staticmap?center=60.448009,+22.270176&zoom=17&scale=false&size=600x600&maptype=roadmap&key=AIzaSyCWrM7xzlmZHgQro8cGpxJp-VM__2oNpME&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7C60.448009,+22.270176"
     },
     {
-      "aika": new Date(2017, 4, 1, 0),
+      "aika": new Date(2018, 4, 1, 0),
       "nimi": "Ikuisen teekkarin hauta - Yliopistonmäki",
       "kuvaus": "Wappuyönä kokoonnumme muistelemaan ikuista teekkaria ja nostamme oluttynnörin hänen haudalleen.",
       "kartta": "https://maps.googleapis.com/maps/api/staticmap?center=60.456071,+22.285517&zoom=17&scale=false&size=600x600&maptype=roadmap&key=AIzaSyCWrM7xzlmZHgQro8cGpxJp-VM__2oNpME&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7C60.456071,+22.285517"
     },
     {
-      "aika": new Date(2017, 4, 1, 12),
+      "aika": new Date(2018, 4, 1, 12),
       "nimi": "TYYn vappupiknik - Vartiovuorenmäki",
       "kuvaus": "TYY järjestää perinteisen vappupiknikin Vartiovuorenmäellä, jossa on enemmän tai vähemmän tapahtumaa ja pahaa oloa. Tähän päättyy Wapun taika ja tätä seuraa vain kesä ja aurinko ja darra ja loputon rahavirta...",
       "kartta": "https://maps.googleapis.com/maps/api/staticmap?center=60.448326,+22.276958&zoom=16&scale=false&size=600x600&maptype=roadmap&key=AIzaSyCWrM7xzlmZHgQro8cGpxJp-VM__2oNpME&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7C60.448326,+22.276958"
