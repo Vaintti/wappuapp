@@ -229,7 +229,7 @@ class App extends Component {
                 <ul className="collection nomargin">
                   <li className="collection-item">Osta wappupassi wappukomissaarilta (ne on niitä silinteripäisiä tyyppejä) wapputapahtumista tai Digitin/Nucleuksen kiltahuoneelta.</li>
                   <li className="collection-item">Käy wapputapahtumissa ja pyydä passiisi leimoja wappukomissaareilta. </li>
-                  <li className="collection-item">Palauta passi wappukomissaarille wappupiknikillä, haista vittu -päivänä tai niiden jälkeen Digitin tai Nucleuksen hallituslaisille kiltahuoneella.</li>
+                  <li className="collection-item">Palauta passi wappukomissaarille wappupiknikillä tai sen jälkeen Digitin tai Nucleuksen hallituslaisille kiltahuoneella.</li>
                   <li className="collection-item">???</li>
                   <li className="collection-item">Profit.</li>
                 </ul>
