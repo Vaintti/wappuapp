@@ -104,12 +104,12 @@ class App extends Component {
       "kuvaus": "Wappuaaton auringonnousu kruunaa koko kolmeviikkoisen juhlan. Tämä tietää rohkeille ja vahvoille fukseille ilon ja onnen päivää, kun kaiken sen darran päälle päähänsä saa painaa ikioman, vielä valkoisen teekkarilakin. Tilaisuudessa siirrytään myös taidemuseonmäelle seuraamaan vähempiarvoisten kuolevaisten, ylioppilaiden, tavallisten ylioppilaslakkien päähän laittamista.",
       "kartta": "https://maps.googleapis.com/maps/api/staticmap?center=60.454672,+22.284435&zoom=17&scale=false&size=600x600&maptype=roadmap&key=AIzaSyCWrM7xzlmZHgQro8cGpxJp-VM__2oNpME&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7C60.454672,+22.284435"
     },
-    {
+    /*{
       "aika": new Date(2018, 3, 30, 18,30),
       "nimi": "Paavo Nurmen patsaan lakitus",
       "kuvaus": "TBA",
       "kartta": "https://maps.googleapis.com/maps/api/staticmap?center=60.448009,+22.270176&zoom=17&scale=false&size=600x600&maptype=roadmap&key=AIzaSyCWrM7xzlmZHgQro8cGpxJp-VM__2oNpME&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7C60.448009,+22.270176"
-    },
+    },*/
     {
       "aika": new Date(2018, 4, 1, 0),
       "nimi": "Ikuisen teekkarin hauta - Yliopistonmäki",
