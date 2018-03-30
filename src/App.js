@@ -21,7 +21,7 @@ class App extends Component {
       "kartta": "https://maps.googleapis.com/maps/api/staticmap?center=vegas+turku&zoom=17&scale=false&size=600x600&maptype=roadmap&key=AIzaSyCWrM7xzlmZHgQro8cGpxJp-VM__2oNpME&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7Cvegas+turku"
     },
     {
-      "aika": new Date(2018, 3, 19, 12),
+      "aika": new Date(2018, 3, 19, 11),
       "nimi": "Wappulehden wirallinen myyntipäiwä - Digitin kiltahuone",
       "kuvaus": "Teekkarihuumori on tekniikan opiskelijoiden lahja Suomen kansalle. Tänään tätä lahjaa jaellaan avokätisesti käteistä vastaan Turun toreilla. Torilla tavataan! Huom! Jotta fuksit lakkinsa ansaitsevat, on heidän tänä päivänä suoritettava uroteko. Uunituoretta, mahtavaa ja kaunista Pilde & Napander -lehteä fuksien myytäköön runsain määrin ja teekkareiden ilosanomaa kaikelle kansalle levittäköön auringon paisteessa. Yhteislähtö Turun toreille Digitin kiltahuoneelta.",
       "kartta": "https://maps.googleapis.com/maps/api/staticmap?center=60.455659,+22.285654&zoom=17&scale=false&size=600x600&maptype=roadmap&key=AIzaSyCWrM7xzlmZHgQro8cGpxJp-VM__2oNpME&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7C60.455659,+22.285654"
@@ -51,7 +51,7 @@ class App extends Component {
       "kartta": "https://maps.googleapis.com/maps/api/staticmap?center=60.455659,+22.285654&zoom=17&scale=false&size=600x600&maptype=roadmap&key=AIzaSyCWrM7xzlmZHgQro8cGpxJp-VM__2oNpME&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7C60.455659,+22.285654"
     },
     {
-      "aika": new Date(2018, 3, 23, 19),
+      "aika": new Date(2018, 3, 23, 17),
       "nimi": "Kerhopäivä: Viini ja jyystö, Typerien juomien kerho ja Typerien pelien ilta - Q-talo",
       "kuvaus": "<p>Viini- ja jyystöilta: Teekkarit ovat hienoa ja arvokasta väkeä, ja nauttivat viinastaan myös punaisena tai valkoisena. Joskus jopa kuohuvana tai roséna. Tämän alkomaholipitoisen herkun taistelutoverina wapputaistossa  auttaa oivasti keltainen ystävänsä jyystö, jota mukavien (nice = mukava) kerholaisten johdolla pääsemme tässä koettelemuksessa maistelemaan.</p> <p>Typerien juomien kerho: Jos viini ei maistu, ja jottei ainainen bissen lipitys tai siiderin sirkutus pääsisi kyllästyttämään, kokeillaan Typerien juomien illassa jotain uutta! Järjestäjätahot järjestävät järjestyspaikalle järjestyksessä erilaisia järjeltään typeriä juomia, joita sitten järjelliset jäsenistön jäsenet pääsevät maistelemaan. Tapahtuma on myös OPM, joten oma typerä juoma kannattaa ottaa mukaan.</p> <p>Typerien pelien ilta: Typerät tyypit tyyppaavat typeriä pelejä tyypillisen tyrmäävään tahtiin.",
       "kartta": "https://maps.googleapis.com/maps/api/staticmap?center=Q-talo&zoom=17&scale=false&size=600x600&maptype=roadmap&key=AIzaSyCWrM7xzlmZHgQro8cGpxJp-VM__2oNpME&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7CQ-talo"
