@@ -113,7 +113,7 @@ export default {
       {
         "aika": new Date(2018, 3, 18, 20),
         "nimi": "Wappu magazine publication and Wappu opening party. - Vegas",
-        "kuvaus": "Certain sign of spring, The Wappu magazine Pilde & Napander, is here to entertain folks! This beautiful magazine will be published, sparkling wine flows and everyone is having the time of their lives. In this brilliant state of mind, we can all read the pages of the new P&N and laugh for the best of teekkari humour. Wappu officially begins with Wappustart party and the declaration of Wappu peace.",
+        "kuvaus": "Certain sign of spring, The Wappu magazine Pilde & Napander, is here to entertain folks! This beautiful magazine will be published, sparkling wine flows and everyone is having the time of their lives. In this brilliant state of mind, we can all read the pages of the new P&N and laugh for the best of teekkari humour. Wappu officially begins with Wappu opening party and the declaration of Wappu peace.",
         "kartta": "https://maps.googleapis.com/maps/api/staticmap?center=vegas+turku&zoom=17&scale=false&size=600x600&maptype=roadmap&key=AIzaSyCWrM7xzlmZHgQro8cGpxJp-VM__2oNpME&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7Cvegas+turku"
       },
       {
