@@ -111,9 +111,111 @@ export default {
     ],
     en: [
       {
+        "aika": new Date(2018, 3, 18, 20),
+        "nimi": "Wappu magazine publication and Wappu opening party. - Vegas",
+        "kuvaus": "Certain sign of spring, The Wappu magazine Pilde & Napander, is here to entertain folks! This beautiful magazine will be published, sparkling wine flows and everyone is having the time of their lives. In this brilliant state of mind, we can all read the pages of the new P&N and laugh for the best of teekkari humour. Wappu officially begins with Wappustart party and the declaration of Wappu peace.",
+        "kartta": "https://maps.googleapis.com/maps/api/staticmap?center=vegas+turku&zoom=17&scale=false&size=600x600&maptype=roadmap&key=AIzaSyCWrM7xzlmZHgQro8cGpxJp-VM__2oNpME&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7Cvegas+turku"
+      },
+      {
+        "aika": new Date(2018, 3, 19, 11),
+        "nimi": "The official sale day of Wappu magazine - Digit Guildroom",
+        "kuvaus": "Teekkari humour is a gift for the whole nation of Finland. Today, we sell these pieces of humor around central Turku. We walk together to Kauppatori from Digit Guildroom.",
+        "kartta": "https://maps.googleapis.com/maps/api/staticmap?center=60.455659,+22.285654&zoom=17&scale=false&size=600x600&maptype=roadmap&key=AIzaSyCWrM7xzlmZHgQro8cGpxJp-VM__2oNpME&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7C60.455659,+22.285654"
+      },
+      {
+        "aika": new Date(2018, 3, 19, 17),
+        "nimi": "Pedal car Grand Prix - Varvintori",
+        "kuvaus": "The engineering students of Turku arranges the yearly pedal car race. This need for speed requires the drivers' huge buttocks. The event is an unique spectacle for the performances and the participation of the audience as well.",
+        "kartta": "https://maps.googleapis.com/maps/api/staticmap?center=varvintori&zoom=17&scale=false&size=600x600&maptype=roadmap&key=AIzaSyCWrM7xzlmZHgQro8cGpxJp-VM__2oNpME&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7Cvarvintori"
+      },
+      {
+        "aika": new Date(2018, 3, 20, 17),
+        "nimi": "Lyrics contest and Mead Pong - Q-house",
+        "kuvaus": "Teekkari tradition revolves around the songs. The more songs, the more culture! At around 19:00 starts Mead Pong that is played with the rules of traditional Beer Pong but mead in cups instead.",
+        "kartta": "https://maps.googleapis.com/maps/api/staticmap?center=Q-talo&zoom=17&scale=false&size=600x600&maptype=roadmap&key=AIzaSyCWrM7xzlmZHgQro8cGpxJp-VM__2oNpME&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7CQ-talo"
+      },
+      {
+        "aika": new Date(2018, 3, 21, 9),
+        "nimi": "Morning sittning party and Bahama party - Q-house",
+        "kuvaus": "Sittnings: <a href=\"https://en.wikipedia.org/wiki/Sittning\">https://en.wikipedia.org/wiki/Sittning</a> <br> Come as you wake up! The morning starts with academic sittning party and wakes you up for a good Wappu mood early in the morning! The mood remains through the day because after the sittning, around 16 o'clock, the party continues with Bahama party!",
+        "kartta": "https://maps.googleapis.com/maps/api/staticmap?center=Q-talo&zoom=17&scale=false&size=600x600&maptype=roadmap&key=AIzaSyCWrM7xzlmZHgQro8cGpxJp-VM__2oNpME&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7CQ-talo"
+      },
+      {
+        "aika": new Date(2018, 3, 22, 14),
+        "nimi": "Cartoon marathon - K124B",
+        "kuvaus": "Usually marathons are exhausting, but not this one. In de deeps of Agora we'll watch through the old classics.",
+        "kartta": "https://maps.googleapis.com/maps/api/staticmap?center=60.455659,+22.285654&zoom=17&scale=false&size=600x600&maptype=roadmap&key=AIzaSyCWrM7xzlmZHgQro8cGpxJp-VM__2oNpME&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7C60.455659,+22.285654"
+      },
+      {
+        "aika": new Date(2018, 3, 23, 17),
+        "nimi": "Club day - Q-house",
+        "kuvaus": "<p>Wine & \"Dine\" club: The teekkaris are classy and well-mannered and they enjoy their alcohol also red and white. Sometimes even sparkly or rosé. The serving of the night goes well with this alcoholic drink. The serving might include - but is not limited to - cheese and short films acted by well-paid actors with good working conditions.</p><p>The club of stupid drinks: If wine's not for your tasting, and you don't want to drink just beer or cider, welcome to the club and try something completely different! The organizers will bring some absurd drinks that you can taste. You are also encouraged to bring your own stupid alcoholic drink with you that everybody can taste.</p><p>The club of stupid games: If you prefer board games, this is the club for you.</p>",
+        "kartta": "https://maps.googleapis.com/maps/api/staticmap?center=Q-talo&zoom=17&scale=false&size=600x600&maptype=roadmap&key=AIzaSyCWrM7xzlmZHgQro8cGpxJp-VM__2oNpME&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7CQ-talo"
+      },
+      {
+        "aika": new Date(2018, 3, 24, 12),
+        "nimi": "Campus circuit - Digit Guildroom",
+        "kuvaus": "Today, we'll go around the campus and visit the club rooms, offices and guildrooms of the many student organizations at UTU. After the Campus circuit you can join the pub crawl organized by 37.",
+        "kartta": "https://maps.googleapis.com/maps/api/staticmap?center=60.455659,+22.285654&zoom=17&scale=false&size=600x600&maptype=roadmap&key=AIzaSyCWrM7xzlmZHgQro8cGpxJp-VM__2oNpME&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7C60.455659,+22.285654"
+      },
+      {
+        "aika": new Date(2018, 3, 24, 16),
+        "nimi": "Jallu-go-around pub crawl - Proffan kellari",
+        "kuvaus": "This pub crawl goes around the best bars in Turku. You can try out many different drinks made of Finnish traditional spirit Jaloviina. Buy tickets ahead.",
+        "kartta": "https://maps.googleapis.com/maps/api/staticmap?center=Proffan+Kellari&zoom=17&scale=false&size=600x600&maptype=roadmap&key=AIzaSyCWrM7xzlmZHgQro8cGpxJp-VM__2oNpME&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7CProffan+Kellari"
+      },
+      {
+        "aika": new Date(2018, 3, 25, 18),
+        "nimi": "Drunk pinhead sittning party - Osakuntasali",
+        "kuvaus": "Teekkari sings more gladly than well, and can drink booze smartly. Welcome to the booze buffet. Here all the drinks are included in the price. BYOH - Bring Your Own Helmet",
+        "kartta": "https://maps.googleapis.com/maps/api/staticmap?center=60.454787,+22.287281&zoom=17&scale=false&size=600x600&maptype=roadmap&key=AIzaSyCWrM7xzlmZHgQro8cGpxJp-VM__2oNpME&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7C60.454787,+22.287281"
+      },
+      {
+        "aika": new Date(2018, 3, 26, 16),
+        "nimi": "Grill and Finnish skittles - Field behind Educarium",
+        "kuvaus": "Finnish skittles: <a href=\"https://en.wikipedia.org/wiki/Finnish_skittles\">https://en.wikipedia.org/wiki/Finnish_skittles</a><br>Drinking makes you hungry and sports make you thirsty. Grill, sports and drinks are the match made in heaven! This event is for everyone studying natural science or technology. Bring your own beer. There's also Mega Pong. Beer Pong but Mega-sized!",
+        "kartta": "https://maps.googleapis.com/maps/api/staticmap?center=60.458263,+22.284175&zoom=17&scale=false&size=600x600&maptype=roadmap&key=AIzaSyCWrM7xzlmZHgQro8cGpxJp-VM__2oNpME&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7C60.458263,+22.284175"
+      },
+      {
+        "aika": new Date(2018, 3, 27, 16, 30),
+        "nimi": "Tempo sittning party and Teekkari games - Q-talo",
+        "kuvaus": "A different kind of sittning party. Here we go thourgh the most well-known songs. Food isn't served and anyways you wouldn't have time to eat it. After the sittning, you can try out or just watch other playing traditional Teekkari games. Bring your own beer.",
+        "kartta": "https://maps.googleapis.com/maps/api/staticmap?center=Q-talo&zoom=17&scale=false&size=600x600&maptype=roadmap&key=AIzaSyCWrM7xzlmZHgQro8cGpxJp-VM__2oNpME&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7CQ-talo"
+      },
+      {
+        "aika": new Date(2018, 3, 28, 16),
+        "nimi": "Well-being day - TYY sauna",
+        "kuvaus": "Well-being is just as important as having fun. Come to relax in sauna and watch movies. This is the last chance to regain energy for the rest of the Wappu.",
+        "kartta": "https://maps.googleapis.com/maps/api/staticmap?center=60.454567,+22.287194&zoom=17&scale=false&size=600x600&maptype=roadmap&key=AIzaSyCWrM7xzlmZHgQro8cGpxJp-VM__2oNpME&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7C60.454567,+22.287194"
+      },
+      {
+        "aika": new Date(2018, 3, 29, 12),
+        "nimi": "Fire test - Axelia",
+        "kuvaus": "This happening is only for first-year students. Sorry :(",
+        "kartta": "https://maps.googleapis.com/maps/api/staticmap?center=60.455108,+22.281236&zoom=17&scale=false&size=600x600&maptype=roadmap&key=AIzaSyCWrM7xzlmZHgQro8cGpxJp-VM__2oNpME&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7C60.455108,+22.281236"
+      },
+      {
+        "aika": new Date(2018, 3, 30, 14),
+        "nimi": "Wappu eve and Teekkari hat ceremony - University hill",
+        "kuvaus": "Here the freshmen who have earned their own technology student hats will receive them. After the ceremony, we'll go to Taidemuseonmäki where all students will put on their student hats.",
+        "kartta": "https://maps.googleapis.com/maps/api/staticmap?center=60.454672,+22.284435&zoom=17&scale=false&size=600x600&maptype=roadmap&key=AIzaSyCWrM7xzlmZHgQro8cGpxJp-VM__2oNpME&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7C60.454672,+22.284435"
+      },
+      /*{
+        "aika": new Date(2018, 3, 30, 18,30),
+        "nimi": "Paavo Nurmen patsaan lakitus",
+        "kuvaus": "TBA",
+        "kartta": "https://maps.googleapis.com/maps/api/staticmap?center=60.448009,+22.270176&zoom=17&scale=false&size=600x600&maptype=roadmap&key=AIzaSyCWrM7xzlmZHgQro8cGpxJp-VM__2oNpME&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7C60.448009,+22.270176"
+      },*/
+      {
+        "aika": new Date(2018, 4, 1, 0),
+        "nimi": "The grave of the eternal Teekkari - University hill",
+        "kuvaus": "On the Wappu night, we'll gather around the grave of the honorable eternal Teekkari. We commemorate the legacy of the eternal Teekkari and hope that everlasting Teekkari spirit will come to us. Finally, we sacrifice a beer barrel for his/her memory. Bring your own mug ;)",
+        "kartta": "https://maps.googleapis.com/maps/api/staticmap?center=60.456071,+22.285517&zoom=17&scale=false&size=600x600&maptype=roadmap&key=AIzaSyCWrM7xzlmZHgQro8cGpxJp-VM__2oNpME&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7C60.456071,+22.285517"
+      },
+      {
         "aika": new Date(2018, 4, 1, 12),
-        "nimi": "THE TYYn vappupiknik - Vartiovuorenmäki",
-        "kuvaus": "TYY järjestää perinteisen vappupiknikin Vartiovuorenmäellä, jossa on enemmän tai vähemmän tapahtumaa ja pahaa oloa. Tähän päättyy Wapun taika ja tätä seuraa vain kesä ja aurinko ja darra ja loputon rahavirta...",
+        "nimi": "TYY Vappu picnic - Vartiovuorenmäki",
+        "kuvaus": "We gather here to celebrate the start of the summer.",
         "kartta": "https://maps.googleapis.com/maps/api/staticmap?center=60.448326,+22.276958&zoom=16&scale=false&size=600x600&maptype=roadmap&key=AIzaSyCWrM7xzlmZHgQro8cGpxJp-VM__2oNpME&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7C60.448326,+22.276958"
       }
     ]
