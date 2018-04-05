@@ -6,8 +6,11 @@ import logo from './digleus.png';
 import wappuradio from './wappuradio.svg'
 import ResponsiveEmbed from 'react-responsive-embed';
 import './App.css';
-import EventsData from './translations/Events'
-import { BrowserRouter } from 'react-router-dom'
+import EventsData from './translations/Events';
+import ParticipationInfo from './translations/Participation';
+import HeaderText from './translations/Header';
+import TitleTexts from './translations/Titles';
+import { BrowserRouter, Link } from 'react-router-dom';
 
 class App extends Component {
   constructor(props) {
@@ -15,11 +18,17 @@ class App extends Component {
     var wapunalku = new Date(2018, 3, 19, 0);
     var now = new Date();
     var timetowappu = new Date(Date.parse(wapunalku) - Date.parse(now));
-    var tapahtumat = EventsData.fi
+    var tapahtumat = EventsData.fi;
+    var participation = ParticipationInfo.fi;
+    var header = HeaderText.fi;
+    var titles = TitleTexts.fi;
     if (location.search.includes("lang=en")) {
-      tapahtumat = EventsData.en
+      tapahtumat = EventsData.en;
+      participation = ParticipationInfo.en;
+      header = HeaderText.en;
+      titles = TitleTexts.en;
     }
-    this.state = { vappuun: timetowappu, päivät: 0, tunnit: 0, minuutit: 0, sekuntit: 0, tapahtumat: tapahtumat, vitsi: "", wapunalku: wapunalku };
+    this.state = { lang: "en", vappuun: timetowappu, päivät: 0, tunnit: 0, minuutit: 0, sekuntit: 0, tapahtumat: tapahtumat, participation: participation, titles: titles, header: header, vitsi: "", wapunalku: wapunalku };
   }
 
   tick() {
@@ -77,8 +86,9 @@ class App extends Component {
             <div className="col s12 l1 m12 logo">
               <img src={logo} height="70px" alt="logo"></img>
             </div>
-            <div className="col s12 l3 m12">
-              <h4>Turun Teekkariwappu</h4>
+            <div id="title" className="col s12 l3 m12">
+              <h4>{this.state.header.wappu}</h4>
+              <h5><a className="white-text" href="https://www.instagram.com/explore/tags/turunwappu/" target="_blank">#turunwappu</a></h5>
             </div>
             <div className="col s12 l4 m12">
               <h5>
@@ -91,19 +101,22 @@ class App extends Component {
               &
               <a className="jarjesto" href="http://nucleus.fi/">Nucleus</a>
               <br></br>
-              Mukana menossa myös
+              {this.state.header.with}
               <br></br>
               <a className="jarjesto pikkujarjesto" href="http://teekkarikomissio.utu.fi/fi/index.html">Teekkarikomissio</a>
-              ja
+              {this.state.header.and}
               <a className="jarjesto pikkujarjesto" href="https://www.asteriski.fi/">Asteriski</a>
             </div>
+            <a className="white-text" href="/">fi</a>
+            |
+            <a className="white-text" href="/?lang=en">en</a>
           </div>
         </div>
         <div className="row">
           <div className="padding20 col s12 m12 l8">
             <div className="grey lighten-5 card flex-column nomargintop">
               <div className="padding20 card orange lighten-1 white-text nomargin">
-                <h5>Seuraavat tapahtumat</h5>
+                <h5>{this.state.titles.upcoming}</h5>
               </div>
 
               <ul className="collapsible popout margin20topbottom" data-collapsible="accordion">
@@ -121,13 +134,13 @@ class App extends Component {
           <div className="padding20 col s12 m12 l4">
             <div className="grey lighten-5 card flex-column nomargintop">
               <div className="padding20 card orange lighten-1 white-text nomargin">
-                <h5>Miten osallistun?</h5>
+                <h5>{this.state.titles.participating}</h5>
               </div>
               <div className="margin20">
                 <ul className="collection nomargin">
-                  <li className="collection-item">Osta wappupassi wappukomissaarilta (ne on niitä silinteripäisiä tyyppejä) wapputapahtumista tai Digitin/Nucleuksen kiltahuoneelta.</li>
-                  <li className="collection-item">Käy wapputapahtumissa ja pyydä passiisi leimoja wappukomissaareilta. </li>
-                  <li className="collection-item">Palauta passi wappukomissaarille wappupiknikillä tai sen jälkeen Digitin tai Nucleuksen hallituslaisille kiltahuoneella.</li>
+                  <li className="collection-item">{this.state.participation.step1}</li>
+                  <li className="collection-item">{this.state.participation.step2}</li>
+                  <li className="collection-item">{this.state.participation.step3}</li>
                   <li className="collection-item">???</li>
                   <li className="collection-item">Profit.</li>
                 </ul>
@@ -136,7 +149,7 @@ class App extends Component {
 
             <div className="grey lighten-5 card flex-column">
               <div className="padding20 card orange lighten-1 white-text nomargin">
-                <h5>Vitsihuumoria</h5>
+                <h5>{this.state.titles.humour}</h5>
               </div>
               <div className="margin20">
                 <ul className="collection nomargin">
@@ -149,7 +162,7 @@ class App extends Component {
 
             <div className="grey lighten-5 card flex-column">
               <div className="padding20 card orange lighten-1 white-text nomargin">
-                <h5>Wapun virallinen soittolista</h5>
+                <h5>{this.state.titles.playlist}</h5>
               </div>
               <iframe className="playlist" src="https://embed.spotify.com/?uri=spotify%3Auser%3Adalimited%3Aplaylist%3A2WB71URH6WuV4q2Zad60TU" height="380"></iframe>
             </div>
@@ -168,7 +181,7 @@ class App extends Component {
 
             <div className="grey lighten-5 card flex-column">
               <div className="padding20 card orange lighten-1 white-text nomargin">
-                <h5>Some</h5>
+                <h5>{this.state.titles.social}</h5>
               </div>
               <div className="margin20">
                 <ul className="collection">
