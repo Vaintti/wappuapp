@@ -110,6 +110,11 @@ export default {
           }
     ],
     en: [
-
+      {
+        "aika": new Date(2018, 4, 1, 12),
+        "nimi": "THE TYYn vappupiknik - Vartiovuorenmäki",
+        "kuvaus": "TYY järjestää perinteisen vappupiknikin Vartiovuorenmäellä, jossa on enemmän tai vähemmän tapahtumaa ja pahaa oloa. Tähän päättyy Wapun taika ja tätä seuraa vain kesä ja aurinko ja darra ja loputon rahavirta...",
+        "kartta": "https://maps.googleapis.com/maps/api/staticmap?center=60.448326,+22.276958&zoom=16&scale=false&size=600x600&maptype=roadmap&key=AIzaSyCWrM7xzlmZHgQro8cGpxJp-VM__2oNpME&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7C60.448326,+22.276958"
+      }
     ]
 }

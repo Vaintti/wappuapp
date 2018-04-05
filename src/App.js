@@ -7,6 +7,7 @@ import wappuradio from './wappuradio.svg'
 import ResponsiveEmbed from 'react-responsive-embed';
 import './App.css';
 import EventsData from './translations/Events'
+import { BrowserRouter } from 'react-router-dom'
 
 class App extends Component {
   constructor(props) {
@@ -15,6 +16,9 @@ class App extends Component {
     var now = new Date();
     var timetowappu = new Date(Date.parse(wapunalku) - Date.parse(now));
     var tapahtumat = EventsData.fi
+    if (location.search.includes("lang=en")) {
+      tapahtumat = EventsData.en
+    }
     this.state = { vappuun: timetowappu, päivät: 0, tunnit: 0, minuutit: 0, sekuntit: 0, tapahtumat: tapahtumat, vitsi: "", wapunalku: wapunalku };
   }
 
@@ -66,6 +70,7 @@ class App extends Component {
 
   render() {
     return (
+      <BrowserRouter>
       <div className="App">
         <div className="row nomargin baselinealign margin20bottom">
           <div className="App-header card nomargin orange white-text">
@@ -182,6 +187,7 @@ class App extends Component {
           </div>
         </div>
       </div>
+      </BrowserRouter>
     );
   }
 }
