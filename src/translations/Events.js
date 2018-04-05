@@ -27,7 +27,7 @@ export default {
           {
             "aika": new Date(2018, 3, 21, 9),
             "nimi": "Aamusitsit ja Bahamabileet - Q-talo",
-            "kuvaus": "Tule sellaisena kuin heräät! Aamu alkaa akateemisella pöytäjuhlalla, joka on nostattava Wappumielen uudelleen jo aamuwarhain. Juhlamieli säilykööt läpi päivän, sillä noin klo 16 - heti sitsien päätyttyä - päästään suoraan jatkamaan Bahamabileisiin samoissa tiloissa. Huikeeta!",
+            "kuvaus": 'Tule sellaisena kuin heräät! Aamu alkaa akateemisella pöytäjuhlalla, joka on nostattava Wappumielen uudelleen jo aamuwarhain. Juhlamieli säilykööt läpi päivän, sillä noin klo 16 - heti sitsien päätyttyä - päästään suoraan jatkamaan Bahamabileisiin samoissa tiloissa. Huikeeta!  <br> <br> <a href="https://www.digit.fi/enrol.php?v=event&id=919" target="_blank">Ilmoittautumiseen</a>',
             "kartta": "https://maps.googleapis.com/maps/api/staticmap?center=Q-talo&zoom=17&scale=false&size=600x600&maptype=roadmap&key=AIzaSyCWrM7xzlmZHgQro8cGpxJp-VM__2oNpME&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7CQ-talo"
           },
           {
@@ -57,7 +57,7 @@ export default {
           {
             "aika": new Date(2018, 3, 25, 18),
             "nimi": "Kääliösitsit - Osakuntasali",
-            "kuvaus": "Lyhenne sanoista KänniÄäliösitsit. Teekkari laulaa mieluummin kuin hyvin, ja näillä sitseillä käyttää myös viisasten juomaa samoin. Näiden sitsien jälkeen harvoin kuulee sanonnan ”oispa kaljaa”. Digitin ja Nucleuksen lisäksi mukana kääliöilee myös Asteriski!",
+            "kuvaus": 'Lyhenne sanoista KänniÄäliösitsit. Teekkari laulaa mieluummin kuin hyvin, ja näillä sitseillä käyttää myös viisasten juomaa samoin. Näiden sitsien jälkeen harvoin kuulee sanonnan ”oispa kaljaa”. Digitin ja Nucleuksen lisäksi mukana kääliöilee myös Asteriski! <br> <br> <a href="https://www.digit.fi/enrol.php?v=event&id=918" target="_blank">Ilmoittautumiseen</a>',
             "kartta": "https://maps.googleapis.com/maps/api/staticmap?center=60.454787,+22.287281&zoom=17&scale=false&size=600x600&maptype=roadmap&key=AIzaSyCWrM7xzlmZHgQro8cGpxJp-VM__2oNpME&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7C60.454787,+22.287281"
           },
           {
@@ -137,7 +137,7 @@ export default {
       {
         "aika": new Date(2018, 3, 21, 9),
         "nimi": "Morning sittning party and Bahama party - Q-house",
-        "kuvaus": "Sittnings: <a href=\"https://en.wikipedia.org/wiki/Sittning\">https://en.wikipedia.org/wiki/Sittning</a> <br> Come as you wake up! The morning starts with academic sittning party and wakes you up for a good Wappu mood early in the morning! The mood remains through the day because after the sittning, around 16 o'clock, the party continues with Bahama party!",
+        "kuvaus": "Sittnings: <a href=\"https://en.wikipedia.org/wiki/Sittning\">https://en.wikipedia.org/wiki/Sittning</a> <br> Come as you wake up! The morning starts with academic sittning party and wakes you up for a good Wappu mood early in the morning! The mood remains through the day because after the sittning, around 16 o'clock, the party continues with Bahama party! <br> <br> <a href=\"https://www.digit.fi/enrol.php?v=event&id=919\" target=\"_blank\">Enrolment</a>",
         "kartta": "https://maps.googleapis.com/maps/api/staticmap?center=Q-talo&zoom=17&scale=false&size=600x600&maptype=roadmap&key=AIzaSyCWrM7xzlmZHgQro8cGpxJp-VM__2oNpME&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7CQ-talo"
       },
       {
@@ -167,7 +167,7 @@ export default {
       {
         "aika": new Date(2018, 3, 25, 18),
         "nimi": "Drunk pinhead sittning party - Osakuntasali",
-        "kuvaus": "Teekkari sings more gladly than well, and can drink booze smartly. Welcome to the booze buffet. Here all the drinks are included in the price. BYOH - Bring Your Own Helmet",
+        "kuvaus": "Sittnings: <a href=\"https://en.wikipedia.org/wiki/Sittning\">https://en.wikipedia.org/wiki/Sittning</a> <br> Teekkari sings more gladly than well, and can drink booze smartly. Welcome to the booze buffet. Here all the drinks are included in the price. BYOH - Bring Your Own Helmet  <br> <br> <a href=\"https://www.digit.fi/enrol.php?v=event&id=918\" target=\"_blank\">Enrolment</a>",
         "kartta": "https://maps.googleapis.com/maps/api/staticmap?center=60.454787,+22.287281&zoom=17&scale=false&size=600x600&maptype=roadmap&key=AIzaSyCWrM7xzlmZHgQro8cGpxJp-VM__2oNpME&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7C60.454787,+22.287281"
       },
       {
