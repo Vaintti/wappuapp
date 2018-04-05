@@ -120,6 +120,10 @@ a:hover.jarjesto {
   color: grey;
 }
 
+a:hover.white-text {
+  color: grey !important;
+}
+
 .margin20topbottom {
   margin: 20px 0 20px 0;
 }
