@@ -40,6 +40,9 @@ module.exports = {
             'text': 'Mikä ero on anopilla ja sikarilla? Sikarissa ensimmäiset henkäykset ovat parhaat, anopissa viimeiset.'
         },
         {
+            'text': 'Mitä eroa on mustilla ja vihreillä oliiveilla? Musti on koira.'
+        },
+        {
             'text': 'Kaksi kakkaa istui hiekkalaatikolla ja ripuli tuli paikalle. Ripuli kysyi: "saanko tulla mukaan leikkiin?" Johon kakat vastasivat: "Et, tää on vain koville jätkille!"'
         }];
         callback(vitsit);
