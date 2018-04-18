@@ -114,7 +114,8 @@ class App extends Component {
         </div>
         <div className="row">
           <div className="padding20 col s12 m12 l8">
-            <div className="grey lighten-5 card flex-column nomargintop">
+          <ResponsiveEmbed src='https://www.youtube.com/embed/Kdf850xiZzc' allowFullScreen />
+            <div className="grey lighten-5 card flex-column margintop1">
               <div className="padding20 card orange lighten-1 white-text nomargin">
                 <h5>{this.state.titles.upcoming}</h5>
               </div>
@@ -128,7 +129,6 @@ class App extends Component {
 
               </ul>
             </div>
-            <ResponsiveEmbed src='https://www.youtube.com/embed/Ix-Chmm3HGE' allowFullScreen />
           </div>
 
           <div className="padding20 col s12 m12 l4">
@@ -164,7 +164,7 @@ class App extends Component {
               <div className="padding20 card orange lighten-1 white-text nomargin">
                 <h5>{this.state.titles.playlist}</h5>
               </div>
-              <iframe className="playlist" src="https://embed.spotify.com/?uri=spotify%3Auser%3Adalimited%3Aplaylist%3A2WB71URH6WuV4q2Zad60TU" height="380"></iframe>
+              <iframe className="playlist" src="https://embed.spotify.com/?uri=spotify%3Auser%3A1166189585%3Aplaylist%3A4N42jOH9c5ZEg17tCrtauc" height="380"></iframe>
             </div>
 
             <div className="grey lighten-5 card flex-column">
@@ -172,7 +172,7 @@ class App extends Component {
                 <a href="https://wappuradio.fi/"><img src={wappuradio} width="135" height="90"></img></a>
               </div>
               <audio controls crossOrigin className="playlist">
-                <source src="//mordor.wappuradio.fi/wappuradio.mp3" type="audio/mpeg"></source>
+                <source src="//stream.wappuradio.fi/wappuradio.mp3" type="audio/mpeg"></source>
               </audio>
               <div className="margin20">
                 <a href="https://wappuradio.fi/">https://wappuradio.fi/</a>
