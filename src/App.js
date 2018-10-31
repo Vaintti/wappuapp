@@ -15,7 +15,7 @@ import { BrowserRouter, Link } from 'react-router-dom';
 class App extends Component {
   constructor(props) {
     super(props);
-    var wapunalku = new Date(2018, 3, 19, 0);
+    var wapunalku = new Date(2019, 3, 18, 0);
     var now = new Date();
     var timetowappu = new Date(Date.parse(wapunalku) - Date.parse(now));
     var tapahtumat = EventsData.fi;
